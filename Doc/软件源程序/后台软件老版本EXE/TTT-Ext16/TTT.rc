@@ -1,0 +1,1823 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TTT.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\TTT.ico"
+IDR_TTTTYPE             ICON    DISCARDABLE     "res\\TTTDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_WIN2500             BITMAP  DISCARDABLE     "res\\ButtonsWin3000.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",            ID_EDIT_PASTE
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 TTT(&A)...",             ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 TTT"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TTT 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2003",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DIALOG_SWITCHLINE DIALOG DISCARDABLE  0, 0, 149, 75
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "线路切换"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,22,52,41,12
+    PUSHBUTTON      "取消",IDCANCEL,82,52,41,12
+    LTEXT           "请选择线路号：",IDC_STATIC,19,27,56,8
+    COMBOBOX        IDC_COMBO_SWITCHLINE,79,25,47,112,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "请选择母线号：",IDC_STATIC,19,7,56,8
+    EDITTEXT        IDC_GENERATRIXNO,79,7,47,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Spin1",IDC_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,123,6,8,
+                    14
+END
+
+IDD_PARAMETERSET DIALOGEX 0, 0, 232, 134
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_STATICEDGE
+CAPTION "三相触发角、延迟角度、带通角设置、发射电流设置"
+FONT 11, "宋体"
+BEGIN
+    CONTROL         "信号角",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,50,18,32,10
+    CONTROL         "延迟角",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,84,18,32,
+                    10
+    CONTROL         "发射电流",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,117,18,
+                    40,10
+    CONTROL         "无线电流电压",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,159,18,54,10
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,6,7,220,120,
+                    WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_GENERATRIXNO,29,16,18,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,40,16,7,
+                    14
+    LTEXT           "母线",IDC_STATIC,13,18,15,8
+    EDITTEXT        IDC_SANGLE,81,34,41,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "设置",IDC_ANGLESET,128,34,37,13
+    LTEXT           "请输入解码带通角度",IDC_STATIC,13,99,68,8
+    EDITTEXT        IDC_DANGLE,81,97,41,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "设置",IDC_DANGLESET,128,97,37,13
+    PUSHBUTTON      "读取",IDC_READANGLE,178,34,37,13
+    LTEXT           "请输入B相信号强度",IDC_STATIC2,13,57,65,8
+    LTEXT           "请输入C相信号强度",IDC_STATIC3,13,78,65,8
+    EDITTEXT        IDC_SANGLEB,81,55,41,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_SANGLEC,81,76,41,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "设置",IDC_ANGLESETB,128,55,37,13
+    PUSHBUTTON      "读取",IDC_READANGLEB,178,55,37,13
+    PUSHBUTTON      "设置",IDC_ANGLESETC,128,76,37,13
+    PUSHBUTTON      "读取",IDC_READANGLEC,178,76,37,13
+    PUSHBUTTON      "读取",IDC_READANGLECD,178,97,37,13
+    LTEXT           "请输入A相信号强度",IDC_STATIC1,13,36,65,8
+END
+
+IDD_CARDDIALOG DIALOGEX 0, 0, 127, 58
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "采集卡选择"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,10,38,44,13
+    PUSHBUTTON      "取消",IDCANCEL,73,38,44,13
+    COMBOBOX        IDC_CARDCOMBO,10,11,107,32,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_PARAMETERSET1 DIALOG DISCARDABLE  0, 0, 177, 114
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "三相触发角和带通角设置"
+FONT 11, "宋体"
+BEGIN
+    EDITTEXT        IDC_GENERATRIXNO,82,17,82,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,92,16,7,
+                    14
+    LTEXT           "请选择所需母线编号",IDC_STATIC,13,19,68,8
+    EDITTEXT        IDC_SANGLE,82,35,19,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "设置",IDC_ANGLESET,104,35,30,12
+    LTEXT           "请输入解码带通角度",IDC_STATIC,13,91,68,8
+    EDITTEXT        IDC_DANGLE,82,89,19,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "设置",IDC_DANGLESET,104,89,30,12
+    PUSHBUTTON      "读取",IDC_READANGLE,134,35,30,12
+    LTEXT           "请输入B相信号强度",IDC_STATIC,13,55,65,8
+    LTEXT           "请输入C相信号强度",IDC_STATIC,13,73,65,8
+    EDITTEXT        IDC_SANGLEB,82,53,19,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_SANGLEC,82,71,19,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "设置",IDC_ANGLESETB,104,53,30,12
+    PUSHBUTTON      "读取",IDC_READANGLEB,134,53,30,12
+    PUSHBUTTON      "设置",IDC_ANGLESETC,104,71,30,12
+    PUSHBUTTON      "读取",IDC_READANGLEC,134,71,30,12
+    PUSHBUTTON      "读取",IDC_READANGLECD,134,89,30,12
+    LTEXT           "请输入A相信号强度",IDC_STATIC,13,37,65,8
+    GROUPBOX        "",IDC_STATIC,7,5,164,103
+END
+
+IDD_DATACHULI DIALOG DISCARDABLE  0, 0, 147, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "数据测试"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "写入文件",IDOK,18,67,41,14
+    PUSHBUTTON      "取消",IDCANCEL,88,67,41,14
+    LTEXT           "振幅A",IDC_STATIC,23,19,21,8
+    LTEXT           "振幅B",IDC_STATIC,78,20,19,8
+    EDITTEXT        IDC_DFA,46,18,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DFB,99,18,27,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,7,3,134,58
+    LTEXT           "X取值",IDC_STATIC,22,44,22,8
+    EDITTEXT        IDC_X0,46,42,34,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_X1,92,42,34,12,ES_AUTOHSCROLL
+    LTEXT           "--",IDC_STATIC,82,43,8,8
+END
+
+IDD_TTT_FORM DIALOGEX 0, 0, 675, 432
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "5",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    539,284,16,10
+    CONTROL         "10",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,556,284,21,
+                    10
+    CONTROL         "20度",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,578,284,28,
+                    10
+    CONTROL         "自学习",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,607,284,35,10
+    PUSHBUTTON      "打开",IDC_BUTTON_LOAD,518,372,19,17
+    EDITTEXT        IDC_WAVEPOINTS,595,182,31,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPINAVERAGE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_HOTTRACK,616,182,11,14
+    EDITTEXT        IDC_STARTPOINT,537,182,36,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPINSTART,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_HOTTRACK,565,182,11,14
+    EDITTEXT        IDC_GENERATRIX,538,221,19,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Spin1",IDC_SPIN4,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,547,221,
+                    11,11
+    LTEXT           "母线",IDC_STATIC,521,224,17,8
+    LTEXT           "模块",IDC_STATIC,560,241,16,8
+    EDITTEXT        IDC_MODULE,576,238,37,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "相位",IDC_STATIC,521,241,17,8
+    EDITTEXT        IDC_PHASE,538,238,19,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Spin1",IDC_SPIN3,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,548,238,
+                    11,11
+    LTEXT           "+10V (+10V )",IDC_STATIC_DISPSCALEP,7,20,60,8
+    LTEXT           "0V ",IDC_STATIC,36,92,20,8
+    LTEXT           "-10V(-10V)",IDC_STATIC_DISPSCALEN,7,164,60,8
+    LTEXT           "",IDC_WAVE,72,21,431,148,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "启动",IDC_BUTTON_START,554,40,32,15
+    PUSHBUTTON      "停止",IDC_BUTTON_STOP,620,40,32,15
+    LTEXT           "频率",IDC_STATIC,608,27,16,8
+    COMBOBOX        IDC_COMBO_SMPRATE,624,25,29,61,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "A相电流0",IDC_CHECK_CH0,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,523,69,44,10
+    CONTROL         "A相电压3",IDC_CHECK_CH3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,571,69,44,10
+    CONTROL         "B相电流1",IDC_CHECK_CH1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,523,82,48,10
+    CONTROL         "B相电压4",IDC_CHECK_CH4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,571,82,44,10
+    CONTROL         "C相电流2",IDC_CHECK_CH2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,523,95,48,10
+    CONTROL         "C相电压5",IDC_CHECK_CH5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,571,95,44,10
+    LTEXT           "",IDC_ANALYZE,72,197,431,147,0,WS_EX_CLIENTEDGE
+    LTEXT           "+10V(+10V)",IDC_STATIC_ANALYZESCALEP,7,194,60,8
+    LTEXT           "0V ",IDC_STATIC,31,267,10,8
+    LTEXT           "-10V(-10V)",IDC_STATIC_ANALYZESCALEN,7,338,60,8
+    PUSHBUTTON      "更新",IDC_BUTTON_UPDATE,556,372,19,17
+    LTEXT           "增益",IDC_STATIC,521,200,16,8
+    LTEXT           "起始波",IDC_STATIC,560,200,24,8
+    LTEXT           "1/4波",IDC_STATIC,608,200,20,8
+    EDITTEXT        IDC_EDIT_GAIN,537,198,20,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_STARTPOINT,585,198,20,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    COMBOBOX        IDC_COMBO_CYCLENUM,631,198,24,62,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "模式选择",IDC_STATIC,517,110,139,22
+    CONTROL         "实时",IDC_RADIO_REALTIME,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,523,119,27,10
+    CONTROL         "分析",IDC_RADIO_ANALYZE,"Button",BS_AUTORADIOBUTTON,551,
+                    119,28,10
+    CONTROL         "串口",IDC_COMSET,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,625,119,28,10
+    PUSHBUTTON      ">",IDC_BUTTON_SHIFTLEFT,636,372,19,17
+    PUSHBUTTON      ">>",IDC_BUTTON_ASHIFTLEFT,616,372,19,17
+    PUSHBUTTON      "<",IDC_BUTTON_SHIFTRIGHT,576,372,19,17
+    PUSHBUTTON      "<<",IDC_BUTTON_ASHIFTRIGHT,596,372,19,17
+    GROUPBOX        "采集",IDC_STATIC,517,16,139,42
+    GROUPBOX        "参数选择",IDC_STATIC,517,135,139,257
+    LTEXT           "电压增",IDC_STATIC,522,27,24,8
+    EDITTEXT        IDC_EDIT_GAINSMPWIN,547,25,20,12,ES_AUTOHSCROLL
+    CONTROL         "前八",IDC_CHECK_AVER4,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,389,179,28,10
+    CONTROL         "流差",IDC_CHECK_DIFFI,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,553,146,29,10
+    CONTROL         "带通",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    521,146,28,10
+    LTEXT           "线号",IDC_STATIC,560,224,16,8
+    COMBOBOX        IDC_COMBO_CHSELECT,576,221,61,74,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "通道 8",IDC_CHECK_CH8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,616,69,36,10
+    CONTROL         "通道 9",IDC_CHECK_CH9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,616,82,36,10
+    CONTROL         "通道10",IDC_CHECK_CH10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,616,95,36,10
+    GROUPBOX        "通道选择",IDC_STATIC,517,60,139,47
+    EDITTEXT        IDC_DATAVALUE,399,378,104,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "读表",IDC_REAL_START,522,298,20,17
+    PUSHBUTTON      "中止",IDC_REALSTOP,613,298,20,17
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,537,372,19,17
+    PUSHBUTTON      "参数",IDC_BUTTON_ANGLE,521,40,32,15
+    PUSHBUTTON      "启动",IDC_REAL_RECORD,567,327,42,16
+    PUSHBUTTON      "停止",IDC_BUTTON_STOPREC,612,327,42,16
+    GROUPBOX        "模块读表",IDC_STATIC,517,211,139,181
+    LTEXT           "指令0x",IDC_STATIC,521,255,24,8
+    EDITTEXT        IDC_ORDER,547,253,15,12,ES_AUTOHSCROLL
+    GROUPBOX        "自采波形",IDC_STATIC,517,317,139,75
+    CONTROL         "789",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    554,269,28,10
+    PUSHBUTTON      "读",IDC_READLINE,639,221,15,13
+    LTEXT           "协议",IDC_STATIC,615,241,16,8
+    EDITTEXT        IDC_SENDORDER,72,362,431,12,ES_AUTOHSCROLL
+    LTEXT           "发送",IDC_STATIC,54,364,17,8
+    COMBOBOX        IDC_PROTOCOLS,631,238,24,161,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_RECEIVE,72,378,305,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "接收",IDC_STATIC,54,380,17,8
+    PUSHBUTTON      "BCH读",IDC_SEND,542,298,22,17
+    PUSHBUTTON      "连读",IDC_SETTIMER,564,298,20,17
+    CONTROL         "号加1",IDC_ADDONE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    523,269,31,10
+    CONTROL         "写日志",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,521,355,35,10
+    CONTROL         "去直流",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,349,179,37,10
+    LTEXT           "结果",IDC_STATIC,381,381,16,8
+    PUSHBUTTON      "解码",IDC_DECODE,634,298,20,17
+    CONTROL         "FFT",IDC_FFT,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | 
+                    WS_TABSTOP,15,372,35,10
+    PUSHBUTTON      ".",IDC_READFILTER,645,282,9,13
+    PUSHBUTTON      "删除",IDC_DELETEFILE,558,352,19,15
+    PUSHBUTTON      "打开",IDC_OPENFILE,577,352,19,15
+    GROUPBOX        "日志操作",IDC_STATIC,517,344,139,25
+    LTEXT           "",IDC_STATICFILE,54,396,452,8
+    LTEXT           "",IDC_STATICFILE2,54,408,452,8
+    PUSHBUTTON      "BCH测试",IDC_BCHTEST,267,172,48,21,NOT WS_VISIBLE
+    CONTROL         "叠波",IDC_CHECK_DIFFI2,"Button",BS_AUTOCHECKBOX,625,146,
+                    27,10
+    CONTROL         "拟匹波",IDC_CHECK_DIFFI3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,586,146,35,10
+    LTEXT           "匹波",IDC_STATIC,523,285,16,8
+    CONTROL         "匹值最大",IDC_FINDPIPEVALUE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,606,269,43,10
+    CONTROL         "全采分析",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,581,119,44,10
+    PUSHBUTTON      "测试",IDC_TESTDATA,596,352,19,15
+    LTEXT           "起点",IDC_STATIC,521,185,16,8
+    LTEXT           "间隔",IDC_STATIC,578,185,16,8
+    PUSHBUTTON      "找零",IDC_FINDZERO,615,352,19,15
+    PUSHBUTTON      "发送",IDC_REAL_SEND,522,327,42,16
+    CONTROL         "都叠",IDC_ALLADD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    521,158,28,10
+    EDITTEXT        IDC_ALLTIMES,630,183,14,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "串口",IDC_STATIC50,54,349,16,8
+    COMBOBOX        IDC_COMBOPORT,73,347,33,74,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "波特率",IDC_STATIC51,111,349,24,8
+    COMBOBOX        IDC_COMBOBIT,137,347,40,77,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "检验位",IDC_STATIC52,182,349,24,8
+    COMBOBOX        IDC_CHECKCOMBOX,208,347,40,74,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "数据位",IDC_STATIC53,253,349,24,8
+    COMBOBOX        IDC_DATACOMBO,278,347,29,73,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "停止位",IDC_STATIC54,313,349,24,8
+    COMBOBOX        IDC_STOPCOMBO,340,347,26,73,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "初始端口",IDC_INITIALIZE,369,346,36,14
+    LTEXT           "超时",IDC_STATIC55,408,349,16,8
+    EDITTEXT        IDC_DELAY,425,347,23,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "ms",IDC_STATIC56,451,348,9,8
+    CONTROL         "",IDC_MSCOMM,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,9,304,25,25
+    EDITTEXT        IDC_ANGLE,484,347,19,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "角度",IDC_STATIC57,465,349,16,8
+    LTEXT           "对位",IDC_STATIC,445,179,16,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDITT,465,176,16,13,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    CONTROL         "校3",IDC_CHECK4BIT,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,420,179,24,10
+    CONTROL         "星角变",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,521,170,36,10
+    LTEXT           "倍",IDC_STATIC,646,185,9,8
+    CONTROL         "0站",IDC_IS0STATION,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,582,269,24,10
+    PUSHBUTTON      "转换",IDC_CHANGEUSEDATA,634,352,19,15
+    PUSHBUTTON      "全发1",IDC_SENDALLONE,584,298,29,17
+    PUSHBUTTON      "测相位",IDC_BUTTON_TESTPHASE,587,40,32,15
+    LTEXT           "电流",IDC_STATIC,568,27,16,9
+    EDITTEXT        IDC_EDIT_CURRENTGAINSMPWIN,586,25,20,12,ES_AUTOHSCROLL
+    CONTROL         "星角变同相发同相收",IDC_CHECK13,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,570,171,84,9
+    COMBOBOX        IDC_ORDERCOMBO,564,253,91,174,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "485(无线)星角延",IDC_STATIC,553,159,61,8
+    EDITTEXT        IDC_DELAYHAOMIAO,614,157,23,11,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "毫秒",IDC_STATIC,638,159,16,8
+    PUSHBUTTON      "写数据",IDC_BUTTON1,201,172,58,22,NOT WS_VISIBLE
+END
+
+IDD_TTT_FORM1 DIALOGEX 0, 0, 675, 432
+STYLE WS_CHILD
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_WAVEPOINTS,624,190,34,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPINAVERAGE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_HOTTRACK,647,189,11,14
+    EDITTEXT        IDC_STARTPOINT,550,190,37,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPINSTART,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_HOTTRACK,578,189,11,14
+    EDITTEXT        IDC_GENERATRIX,549,232,25,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Spin1",IDC_SPIN4,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,559,232,
+                    11,11
+    LTEXT           "母线",IDC_STATIC,531,235,17,8
+    LTEXT           "模块",IDC_STATIC,531,267,17,8
+    EDITTEXT        IDC_MODULE,549,265,55,12,ES_AUTOHSCROLL
+    LTEXT           "相位",IDC_STATIC,531,252,17,8
+    EDITTEXT        IDC_PHASE,549,249,25,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Spin1",IDC_SPIN3,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,556,249,
+                    11,11
+    LTEXT           "     +10V -",IDC_STATIC_DISPSCALEP,28,31,47,8
+    LTEXT           "0V -",IDC_STATIC,61,103,17,8
+    LTEXT           "     -10V -",IDC_STATIC_DISPSCALEN,28,175,47,8
+    LTEXT           "",IDC_WAVE,80,32,431,148,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "启动",IDC_BUTTON_START,573,51,41,15
+    PUSHBUTTON      "停止",IDC_BUTTON_STOP,615,51,41,15
+    LTEXT           "采样频率",IDC_STATIC,592,38,33,8
+    COMBOBOX        IDC_COMBO_SMPRATE,627,36,30,61,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "通道 0",IDC_CHECK_CH0,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,533,80,40,10
+    CONTROL         "通道 3",IDC_CHECK_CH3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,574,80,40,10
+    CONTROL         "通道 1",IDC_CHECK_CH1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,533,93,40,10
+    CONTROL         "通道 4",IDC_CHECK_CH4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,574,93,40,10
+    CONTROL         "通道 2",IDC_CHECK_CH2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,533,106,40,10
+    CONTROL         "通道 5",IDC_CHECK_CH5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,574,106,40,10
+    LTEXT           "",IDC_ANALYZE,80,211,431,147,0,WS_EX_CLIENTEDGE
+    LTEXT           "     +10V -",IDC_STATIC_ANALYZESCALEP,28,208,47,8
+    LTEXT           "0V -",IDC_STATIC,58,281,17,8
+    LTEXT           "     -10V -",IDC_STATIC_ANALYZESCALEN,28,352,47,8
+    PUSHBUTTON      "更新",IDC_BUTTON_UPDATE,572,383,21,17
+    LTEXT           "增益",IDC_STATIC,531,209,16,8
+    LTEXT           "组波起点",IDC_STATIC,590,209,32,8
+    LTEXT           "1/4波",IDC_STATIC,530,175,20,8
+    EDITTEXT        IDC_EDIT_GAIN,550,207,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STARTPOINT,624,207,34,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    COMBOBOX        IDC_COMBO_CYCLENUM,553,172,25,62,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "模式选择",IDC_STATIC,526,121,134,22
+    CONTROL         "实时",IDC_RADIO_REALTIME,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,541,130,28,10
+    CONTROL         "分析",IDC_RADIO_ANALYZE,"Button",BS_AUTORADIOBUTTON,574,
+                    130,28,10
+    PUSHBUTTON      ">",IDC_BUTTON_SHIFTLEFT,642,383,15,17
+    PUSHBUTTON      ">>",IDC_BUTTON_ASHIFTLEFT,626,383,15,17
+    PUSHBUTTON      "<",IDC_BUTTON_SHIFTRIGHT,594,383,15,17
+    PUSHBUTTON      "<<",IDC_BUTTON_ASHIFTRIGHT,610,383,15,17
+    GROUPBOX        "采集",IDC_STATIC,527,27,134,42
+    GROUPBOX        "参数选择",IDC_STATIC,527,146,134,257
+    LTEXT           "采集增益",IDC_STATIC,531,38,33,8
+    EDITTEXT        IDC_EDIT_GAINSMPWIN,564,36,23,12,ES_AUTOHSCROLL
+    CONTROL         "前八",IDC_CHECK_AVER4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,569,157,28,10
+    CONTROL         "流差",IDC_CHECK_DIFFI,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,629,157,27,10
+    CONTROL         "带通",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    599,157,28,10
+    LTEXT           "线路编号",IDC_STATIC,579,235,32,8
+    COMBOBOX        IDC_COMBO_CHSELECT,614,232,27,74,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "打开",IDC_BUTTON_LOAD,530,383,21,17
+    CONTROL         "通道 8",IDC_CHECK_CH8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,615,80,40,10
+    CONTROL         "通道 9",IDC_CHECK_CH9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,615,93,40,10
+    CONTROL         "通道10",IDC_CHECK_CH10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,615,106,40,10
+    GROUPBOX        "通道选择",IDC_STATIC,526,71,134,47
+    EDITTEXT        IDC_DATAVALUE,396,389,115,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "读表",IDC_REAL_START,530,309,24,17
+    PUSHBUTTON      "中止",IDC_REALSTOP,606,309,26,17
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,552,383,20,17
+    PUSHBUTTON      "角度设置",IDC_BUTTON_ANGLE,531,51,41,15
+    PUSHBUTTON      "启动",IDC_REAL_RECORD,573,337,42,17
+    PUSHBUTTON      "停止",IDC_BUTTON_STOPREC,616,337,42,17
+    GROUPBOX        "模块读表",IDC_STATIC,527,222,134,181
+    LTEXT           "指令0x",IDC_STATIC,610,267,24,8
+    EDITTEXT        IDC_ORDER,637,265,17,12,ES_AUTOHSCROLL
+    GROUPBOX        "自采波形",IDC_STATIC,527,328,134,75
+    CONTROL         "789通道",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,567,280,40,10
+    PUSHBUTTON      "读",IDC_READLINE,642,232,16,13
+    LTEXT           "发送协议",IDC_STATIC,579,252,32,8
+    EDITTEXT        IDC_SENDORDER,80,373,431,12,ES_AUTOHSCROLL
+    LTEXT           "发送",IDC_STATIC,62,375,17,8
+    COMBOBOX        IDC_PROTOCOLS,614,249,44,161,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_RECEIVE,80,389,294,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "接收",IDC_STATIC,62,391,17,8
+    PUSHBUTTON      "BCH读",IDC_SEND,554,309,26,17
+    PUSHBUTTON      "连读",IDC_SETTIMER,580,309,26,17
+    CONTROL         "号加1",IDC_ADDONE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    531,280,31,10
+    CONTROL         "写日志",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,529,366,35,10
+    CONTROL         "去直流",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,530,157,37,10
+    LTEXT           "结果",IDC_STATIC,378,392,16,8
+    PUSHBUTTON      "解码",IDC_DECODE,632,309,26,17
+    CONTROL         "FFT",IDC_FFT,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | 
+                    WS_TABSTOP,14,383,35,10
+    PUSHBUTTON      ".",IDC_READFILTER,648,293,9,10
+    PUSHBUTTON      "删除",IDC_DELETEFILE,565,363,23,15
+    PUSHBUTTON      "打开",IDC_OPENFILE,588,363,23,15
+    GROUPBOX        "日志操作",IDC_STATIC,527,355,134,25
+    LTEXT           "",IDC_STATICFILE,62,407,452,8
+    LTEXT           "",IDC_STATICFILE2,62,419,452,8
+    PUSHBUTTON      "TBCH",IDC_BCHTEST,14,4,27,17,NOT WS_VISIBLE
+    CONTROL         "叠配波",IDC_CHECK_DIFFI2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,583,174,36,10
+    CONTROL         "匹配波",IDC_CHECK_DIFFI3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,621,174,36,10
+    LTEXT           "匹配波形",IDC_STATIC,531,295,32,8
+    CONTROL         "5度",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    563,294,24,10
+    CONTROL         "10度",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,589,294,27,
+                    10
+    CONTROL         "20度",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,618,294,28,10
+    CONTROL         "匹值最大",IDC_FINDPIPEVALUE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,612,279,43,10
+    CONTROL         "全采分析",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,607,130,45,10
+    PUSHBUTTON      "测试",IDC_TESTDATA,611,363,23,15
+    LTEXT           "起点",IDC_STATIC,531,192,16,8
+    LTEXT           "叠加间隔",IDC_STATIC,590,192,32,8
+    PUSHBUTTON      "找零",IDC_FINDZERO,634,363,23,15
+    PUSHBUTTON      "发送",IDC_REAL_SEND,530,337,42,17
+END
+
+IDD_TTT_FORM2 DIALOGEX 0, 0, 675, 432
+STYLE WS_CHILD
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_WAVEPOINTS,623,187,34,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPINAVERAGE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_HOTTRACK,646,187,11,14
+    EDITTEXT        IDC_STARTPOINT,546,187,39,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPINSTART,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_HOTTRACK,577,186,11,14
+    EDITTEXT        IDC_GENERATRIX,548,232,25,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Spin1",IDC_SPIN4,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,558,232,
+                    11,11
+    LTEXT           "母线",IDC_STATIC,530,235,17,8
+    LTEXT           "模块",IDC_STATIC,530,267,17,8
+    EDITTEXT        IDC_MODULE,548,265,47,12,ES_AUTOHSCROLL
+    LTEXT           "相位",IDC_STATIC,530,252,17,8
+    EDITTEXT        IDC_PHASE,548,249,25,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Spin1",IDC_SPIN3,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,555,249,
+                    11,11
+    LTEXT           "     +10V -",IDC_STATIC_DISPSCALEP,27,31,47,8
+    LTEXT           "0V -",IDC_STATIC,60,103,17,8
+    LTEXT           "     -10V -",IDC_STATIC_DISPSCALEN,27,175,47,8
+    LTEXT           "",IDC_WAVE,79,32,431,148,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "启动",IDC_BUTTON_START,572,51,41,15
+    PUSHBUTTON      "停止",IDC_BUTTON_STOP,614,51,41,15
+    LTEXT           "采样频率",IDC_STATIC,591,38,33,8
+    COMBOBOX        IDC_COMBO_SMPRATE,626,36,30,61,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "通道 0",IDC_CHECK_CH0,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,532,80,40,10
+    CONTROL         "通道 3",IDC_CHECK_CH3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,573,80,40,10
+    CONTROL         "通道 1",IDC_CHECK_CH1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,532,93,40,10
+    CONTROL         "通道 4",IDC_CHECK_CH4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,573,93,40,10
+    CONTROL         "通道 2",IDC_CHECK_CH2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,532,106,40,10
+    CONTROL         "通道 5",IDC_CHECK_CH5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,573,106,40,10
+    LTEXT           "",IDC_ANALYZE,79,211,431,147,0,WS_EX_CLIENTEDGE
+    LTEXT           "     +10V -",IDC_STATIC_ANALYZESCALEP,27,208,47,8
+    LTEXT           "0V -",IDC_STATIC,57,281,17,8
+    LTEXT           "     -10V -",IDC_STATIC_ANALYZESCALEN,27,352,47,8
+    PUSHBUTTON      "更新",IDC_BUTTON_UPDATE,571,383,21,17
+    LTEXT           "增益",IDC_STATIC,530,207,16,8
+    LTEXT           "组波点",IDC_STATIC,568,207,24,8
+    LTEXT           "1/4波",IDC_STATIC,614,207,20,8
+    EDITTEXT        IDC_EDIT_GAIN,546,205,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STARTPOINT,593,205,20,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    COMBOBOX        IDC_COMBO_CYCLENUM,635,205,24,62,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "模式选择",IDC_STATIC,526,121,136,22
+    CONTROL         "实时",IDC_RADIO_REALTIME,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,540,130,28,10
+    CONTROL         "分析",IDC_RADIO_ANALYZE,"Button",BS_AUTORADIOBUTTON,573,
+                    130,28,10
+    PUSHBUTTON      ">",IDC_BUTTON_SHIFTLEFT,641,383,15,17
+    PUSHBUTTON      ">>",IDC_BUTTON_ASHIFTLEFT,625,383,15,17
+    PUSHBUTTON      "<",IDC_BUTTON_SHIFTRIGHT,593,383,15,17
+    PUSHBUTTON      "<<",IDC_BUTTON_ASHIFTRIGHT,609,383,15,17
+    GROUPBOX        "采集",IDC_STATIC,526,27,136,42
+    GROUPBOX        "参数选择",IDC_STATIC,526,146,136,257
+    LTEXT           "采集增益",IDC_STATIC,530,38,33,8
+    EDITTEXT        IDC_EDIT_GAINSMPWIN,563,36,23,12,ES_AUTOHSCROLL
+    CONTROL         "前八",IDC_CHECK_AVER4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,567,156,28,10
+    CONTROL         "流差",IDC_CHECK_DIFFI,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,628,156,27,10
+    CONTROL         "带通",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    598,156,28,10
+    LTEXT           "线路编号",IDC_STATIC,578,235,32,8
+    COMBOBOX        IDC_COMBO_CHSELECT,613,232,27,74,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "打开",IDC_BUTTON_LOAD,529,383,21,17
+    CONTROL         "通道 8",IDC_CHECK_CH8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,614,80,40,10
+    CONTROL         "通道 9",IDC_CHECK_CH9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,614,93,40,10
+    CONTROL         "通道10",IDC_CHECK_CH10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,614,106,40,10
+    GROUPBOX        "通道选择",IDC_STATIC,526,71,136,47
+    EDITTEXT        IDC_DATAVALUE,395,389,115,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "读表",IDC_REAL_START,529,309,24,17
+    PUSHBUTTON      "中止",IDC_REALSTOP,605,309,26,17
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,551,383,20,17
+    PUSHBUTTON      "角度设置",IDC_BUTTON_ANGLE,530,51,41,15
+    PUSHBUTTON      "启动",IDC_REAL_RECORD,572,337,42,17
+    PUSHBUTTON      "停止",IDC_BUTTON_STOPREC,615,337,42,17
+    GROUPBOX        "模块读表",IDC_STATIC,526,222,136,181
+    LTEXT           "指令0x",IDC_STATIC,600,267,24,8
+    EDITTEXT        IDC_ORDER,627,265,30,12,ES_AUTOHSCROLL
+    GROUPBOX        "自采波形",IDC_STATIC,526,328,136,75
+    CONTROL         "789通道",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,566,280,40,10
+    PUSHBUTTON      "读",IDC_READLINE,641,232,16,13
+    LTEXT           "发送协议",IDC_STATIC,578,252,32,8
+    EDITTEXT        IDC_SENDORDER,79,373,431,12,ES_AUTOHSCROLL
+    LTEXT           "发送",IDC_STATIC,61,375,17,8
+    COMBOBOX        IDC_PROTOCOLS,613,249,44,161,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_RECEIVE,79,389,294,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "接收",IDC_STATIC,61,391,17,8
+    PUSHBUTTON      "BCH读",IDC_SEND,553,309,26,17
+    PUSHBUTTON      "连读",IDC_SETTIMER,579,309,26,17
+    CONTROL         "号加1",IDC_ADDONE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    530,280,31,10
+    CONTROL         "写日志",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,528,366,35,10
+    CONTROL         "去直流",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,529,156,37,10
+    LTEXT           "结果",IDC_STATIC,377,392,16,8
+    PUSHBUTTON      "解码",IDC_DECODE,631,309,26,17
+    CONTROL         "FFT",IDC_FFT,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | 
+                    WS_TABSTOP,13,383,35,10
+    PUSHBUTTON      ".",IDC_READFILTER,647,293,9,10
+    PUSHBUTTON      "删除",IDC_DELETEFILE,564,363,23,15
+    PUSHBUTTON      "打开",IDC_OPENFILE,587,363,23,15
+    GROUPBOX        "日志操作",IDC_STATIC,526,355,136,25
+    LTEXT           "",IDC_STATICFILE,61,407,452,8
+    LTEXT           "",IDC_STATICFILE2,61,419,452,8
+    PUSHBUTTON      "TBCH",IDC_BCHTEST,13,4,27,17,NOT WS_VISIBLE
+    CONTROL         "叠波",IDC_CHECK_DIFFI2,"Button",BS_AUTOCHECKBOX,565,172,
+                    27,10
+    CONTROL         "拟匹波",IDC_CHECK_DIFFI3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,529,172,35,10
+    LTEXT           "匹配波形",IDC_STATIC,530,295,32,8
+    CONTROL         "5度",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    562,294,24,10
+    CONTROL         "10度",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,588,294,27,
+                    10
+    CONTROL         "20度",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,617,294,28,10
+    CONTROL         "匹值最大",IDC_FINDPIPEVALUE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,611,279,43,10
+    CONTROL         "全采分析",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,606,130,45,10
+    PUSHBUTTON      "测试",IDC_TESTDATA,610,363,23,15
+    LTEXT           "起点",IDC_STATIC,530,190,16,8
+    LTEXT           "叠加间隔",IDC_STATIC,589,190,32,8
+    PUSHBUTTON      "找零",IDC_FINDZERO,633,363,23,15
+    PUSHBUTTON      "发送",IDC_REAL_SEND,529,337,42,17
+    CONTROL         "都叠及倍数",IDC_ALLADD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,593,172,52,10
+    EDITTEXT        IDC_ALLTIMES,647,170,13,12,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_CHANGEDIALOG DIALOGEX 0, 0, 246, 159
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "转换USB采集数据文件成TTT文件"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "关闭",ID_CLOSE,172,135,51,17,0,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "源USB采集数据文件...",IDC_SOURCEFILE,19,18,207,14,
+                    BS_FLAT
+    PUSHBUTTON      "生成结果TTT文件...",IDC_DESTFILE,19,71,207,14,BS_FLAT
+    PUSHBUTTON      "转换",IDC_CHANGE,91,135,51,17,0,WS_EX_DLGMODALFRAME
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,7,233,
+                    120,WS_EX_DLGMODALFRAME
+    LTEXT           "",IDC_SOURCESTATIC,19,41,207,8
+    LTEXT           "",IDC_DESTSTATIC,19,92,207,8
+    LTEXT           "放大倍率",IDC_STATIC,14,139,33,8
+    EDITTEXT        IDC_XISHU,49,138,31,12,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_TIMEEVERY DIALOG DISCARDABLE  0, 0, 147, 68
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,18,43,43,16
+    PUSHBUTTON      "取消",IDCANCEL,86,43,43,16
+    LTEXT           "发送时间间隔",IDC_STATIC,11,19,45,8
+    EDITTEXT        IDC_SECONDS,58,17,22,12,ES_AUTOHSCROLL
+    LTEXT           "秒(15-300之间)",IDC_STATIC,82,19,54,8
+END
+
+IDD_DIALOGTIME DIALOG DISCARDABLE  0, 0, 134, 67
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "时间间隔"
+FONT 11, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,12,47,40,13
+    PUSHBUTTON      "取消",IDCANCEL,80,47,40,13
+    EDITTEXT        IDC_EDITTIME,60,18,43,12,ES_MULTILINE | ES_AUTOHSCROLL
+    LTEXT           "两次读表间隔",IDC_STATIC,11,20,45,8
+    LTEXT           "秒",IDC_STATIC,108,20,9,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "TTT Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "TTT\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TTT.EXE\0"
+            VALUE "ProductName", "TTT 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG_SWITCHLINE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_PARAMETERSET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_CARDDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 120
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_PARAMETERSET1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 170
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_DATACHULI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_TTT_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 667
+        TOPMARGIN, 4
+    END
+
+    IDD_TTT_FORM1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 667
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 425
+    END
+
+    IDD_TTT_FORM2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 667
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 425
+    END
+
+    IDD_CHANGEDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_TIMEEVERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_DIALOGTIME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 60
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_SWITCHLINE DLGINIT
+BEGIN
+    IDC_COMBO_SWITCHLINE, 0x403, 7, 0
+0xdfcf, 0xb7c2, 0x3120, "\000" 
+    IDC_COMBO_SWITCHLINE, 0x403, 7, 0
+0xdfcf, 0xb7c2, 0x3220, "\000" 
+    IDC_COMBO_SWITCHLINE, 0x403, 7, 0
+0xdfcf, 0xb7c2, 0x3320, "\000" 
+    IDC_COMBO_SWITCHLINE, 0x403, 7, 0
+0xdfcf, 0xb7c2, 0x3420, "\000" 
+    IDC_COMBO_SWITCHLINE, 0x403, 7, 0
+0xdfcf, 0xb7c2, 0x3520, "\000" 
+    IDC_COMBO_SWITCHLINE, 0x403, 7, 0
+0xdfcf, 0xb7c2, 0x3620, "\000" 
+    IDC_COMBO_SWITCHLINE, 0x403, 7, 0
+0xdfcf, 0xb7c2, 0x3720, "\000" 
+    IDC_COMBO_SWITCHLINE, 0x403, 7, 0
+0xdfcf, 0xb7c2, 0x3820, "\000" 
+    IDC_COMBO_SWITCHLINE, 0x403, 7, 0
+0xdfcf, 0xb7c2, 0x3920, "\000" 
+    IDC_COMBO_SWITCHLINE, 0x403, 7, 0
+0xdfcf, 0xb7c2, 0x3031, "\000" 
+    IDC_COMBO_SWITCHLINE, 0x403, 7, 0
+0xdfcf, 0xb7c2, 0x3131, "\000" 
+    IDC_COMBO_SWITCHLINE, 0x403, 7, 0
+0xdfcf, 0xb7c2, 0x3231, "\000" 
+    IDC_COMBO_SWITCHLINE, 0x403, 7, 0
+0xdfcf, 0xb7c2, 0x3331, "\000" 
+    IDC_COMBO_SWITCHLINE, 0x403, 7, 0
+0xdfcf, 0xb7c2, 0x3431, "\000" 
+    IDC_COMBO_SWITCHLINE, 0x403, 7, 0
+0xdfcf, 0xb7c2, 0x3531, "\000" 
+    0
+END
+
+IDD_CARDDIALOG DLGINIT
+BEGIN
+    IDC_CARDCOMBO, 0x403, 25, 0
+0xbea1, 0x3231, 0xbbce, 0xc9b2, 0xafbc, 0xa8bf, 0x4350, 0x2d49, 0x3139, 
+0x3131, 0x4744, 0xbfa1, "\000" 
+    IDC_CARDCOMBO, 0x403, 25, 0
+0xbea1, 0x3631, 0xbbce, 0xc9b2, 0xafbc, 0xa8bf, 0x4350, 0x2d49, 0x3139, 
+0x3131, 0x5248, 0xbfa1, "\000" 
+    0
+END
+
+IDD_TTT_FORM DLGINIT
+BEGIN
+    IDC_COMBO_SMPRATE, 0x403, 1, 0
+"\000" 
+    IDC_COMBO_CYCLENUM, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_CYCLENUM, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_CYCLENUM, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_CYCLENUM, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_CYCLENUM, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0031, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0032, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0033, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0034, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0035, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0036, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0037, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0038, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0039, 
+    IDC_COMBO_CHSELECT, 0x403, 5, 0
+0x4843, 0x3031, "\000" 
+    IDC_COMBO_CHSELECT, 0x403, 5, 0
+0x4843, 0x3131, "\000" 
+    IDC_COMBO_CHSELECT, 0x403, 5, 0
+0x4843, 0x3231, "\000" 
+    IDC_COMBO_CHSELECT, 0x403, 5, 0
+0x4843, 0x3331, "\000" 
+    IDC_COMBO_CHSELECT, 0x403, 5, 0
+0x4843, 0x3431, "\000" 
+    IDC_COMBO_CHSELECT, 0x403, 5, 0
+0x4843, 0x3531, "\000" 
+    IDC_PROTOCOLS, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_PROTOCOLS, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_PROTOCOLS, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_PROTOCOLS, 0x403, 3, 0
+0x3137, "\000" 
+    IDC_PROTOCOLS, 0x403, 3, 0
+0x3237, "\000" 
+    IDC_PROTOCOLS, 0x403, 3, 0
+0x3337, "\000" 
+    IDC_COMBOBIT, 0x403, 4, 0
+0x3036, 0x0030, 
+    IDC_COMBOBIT, 0x403, 5, 0
+0x3231, 0x3030, "\000" 
+    IDC_COMBOBIT, 0x403, 5, 0
+0x3432, 0x3030, "\000" 
+    IDC_COMBOBIT, 0x403, 5, 0
+0x3834, 0x3030, "\000" 
+    IDC_COMBOBIT, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_COMBOBIT, 0x403, 6, 0
+0x3431, 0x3034, 0x0030, 
+    IDC_COMBOBIT, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_COMBOBIT, 0x403, 6, 0
+0x3832, 0x3038, 0x0030, 
+    IDC_COMBOBIT, 0x403, 6, 0
+0x3833, 0x3034, 0x0030, 
+    IDC_COMBOBIT, 0x403, 6, 0
+0x3635, 0x3030, 0x0030, 
+    IDC_COMBOBIT, 0x403, 7, 0
+0x3231, 0x3038, 0x3030, "\000" 
+    IDC_COMBOBIT, 0x403, 7, 0
+0x3532, 0x3036, 0x3030, "\000" 
+    IDC_CHECKCOMBOX, 0x403, 7, 0
+0xdece, 0xa3d0, 0xe9d1, "\000" 
+    IDC_CHECKCOMBOX, 0x403, 7, 0
+0xe6c6, 0xa3d0, 0xe9d1, "\000" 
+    IDC_CHECKCOMBOX, 0x403, 7, 0
+0xbcc5, 0xa3d0, 0xe9d1, "\000" 
+    IDC_DATACOMBO, 0x403, 2, 0
+0x0034, 
+    IDC_DATACOMBO, 0x403, 2, 0
+0x0035, 
+    IDC_DATACOMBO, 0x403, 2, 0
+0x0036, 
+    IDC_DATACOMBO, 0x403, 2, 0
+0x0037, 
+    IDC_DATACOMBO, 0x403, 2, 0
+0x0038, 
+    IDC_STOPCOMBO, 0x403, 2, 0
+0x0031, 
+    IDC_STOPCOMBO, 0x403, 2, 0
+0x0032, 
+    IDC_MSCOMM, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    0
+END
+
+IDD_TTT_FORM1 DLGINIT
+BEGIN
+    IDC_COMBO_SMPRATE, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_SMPRATE, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_SMPRATE, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_SMPRATE, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_SMPRATE, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_SMPRATE, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO_SMPRATE, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO_SMPRATE, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_SMPRATE, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3433, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3533, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3633, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3733, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3833, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3933, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3034, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3134, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3234, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3334, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3434, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3534, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3634, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3734, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3834, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3934, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3035, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3135, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3235, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3335, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3435, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3535, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3635, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3735, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3835, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3935, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3036, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3136, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3236, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3336, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3436, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3536, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3636, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3736, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3836, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3936, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3037, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3137, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3237, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3337, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3437, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3537, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3637, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3737, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3837, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3937, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3038, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3138, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3238, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3338, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3438, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3538, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3638, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3738, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3838, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3938, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3039, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3139, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3239, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3339, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3439, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3539, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3639, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3739, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3839, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3939, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 4, 0
+0x3031, 0x0030, 
+    IDC_COMBO_CYCLENUM, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_CYCLENUM, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_CYCLENUM, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_CYCLENUM, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_CYCLENUM, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0031, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0032, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0033, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0034, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0035, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0036, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0037, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0038, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0039, 
+    IDC_COMBO_CHSELECT, 0x403, 5, 0
+0x4843, 0x3031, "\000" 
+    IDC_COMBO_CHSELECT, 0x403, 5, 0
+0x4843, 0x3131, "\000" 
+    IDC_COMBO_CHSELECT, 0x403, 5, 0
+0x4843, 0x3231, "\000" 
+    IDC_COMBO_CHSELECT, 0x403, 5, 0
+0x4843, 0x3331, "\000" 
+    IDC_COMBO_CHSELECT, 0x403, 5, 0
+0x4843, 0x3431, "\000" 
+    IDC_COMBO_CHSELECT, 0x403, 5, 0
+0x4843, 0x3531, "\000" 
+    IDC_PROTOCOLS, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_PROTOCOLS, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_PROTOCOLS, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_PROTOCOLS, 0x403, 3, 0
+0x3137, "\000" 
+    IDC_PROTOCOLS, 0x403, 3, 0
+0x3237, "\000" 
+    IDC_PROTOCOLS, 0x403, 3, 0
+0x3337, "\000" 
+    0
+END
+
+IDD_TTT_FORM2 DLGINIT
+BEGIN
+    IDC_COMBO_SMPRATE, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_SMPRATE, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_SMPRATE, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_SMPRATE, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_SMPRATE, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_SMPRATE, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO_SMPRATE, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO_SMPRATE, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_SMPRATE, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3433, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3533, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3633, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3733, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3833, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3933, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3034, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3134, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3234, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3334, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3434, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3534, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3634, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3734, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3834, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3934, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3035, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3135, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3235, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3335, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3435, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3535, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3635, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3735, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3835, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3935, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3036, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3136, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3236, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3336, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3436, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3536, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3636, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3736, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3836, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3936, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3037, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3137, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3237, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3337, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3437, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3537, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3637, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3737, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3837, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3937, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3038, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3138, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3238, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3338, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3438, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3538, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3638, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3738, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3838, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3938, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3039, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3139, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3239, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3339, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3439, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3539, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3639, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3739, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3839, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 3, 0
+0x3939, "\000" 
+    IDC_COMBO_SMPRATE, 0x403, 4, 0
+0x3031, 0x0030, 
+    IDC_COMBO_CYCLENUM, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_CYCLENUM, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_CYCLENUM, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_CYCLENUM, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_CYCLENUM, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0031, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0032, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0033, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0034, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0035, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0036, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0037, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0038, 
+    IDC_COMBO_CHSELECT, 0x403, 4, 0
+0x4843, 0x0039, 
+    IDC_COMBO_CHSELECT, 0x403, 5, 0
+0x4843, 0x3031, "\000" 
+    IDC_COMBO_CHSELECT, 0x403, 5, 0
+0x4843, 0x3131, "\000" 
+    IDC_COMBO_CHSELECT, 0x403, 5, 0
+0x4843, 0x3231, "\000" 
+    IDC_COMBO_CHSELECT, 0x403, 5, 0
+0x4843, 0x3331, "\000" 
+    IDC_COMBO_CHSELECT, 0x403, 5, 0
+0x4843, 0x3431, "\000" 
+    IDC_COMBO_CHSELECT, 0x403, 5, 0
+0x4843, 0x3531, "\000" 
+    IDC_PROTOCOLS, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_PROTOCOLS, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_PROTOCOLS, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_PROTOCOLS, 0x403, 3, 0
+0x3137, "\000" 
+    IDC_PROTOCOLS, 0x403, 3, 0
+0x3237, "\000" 
+    IDC_PROTOCOLS, 0x403, 3, 0
+0x3337, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "/"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "TTT"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\TTT.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

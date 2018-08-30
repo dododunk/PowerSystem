@@ -1,0 +1,413 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\test.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\test.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 test"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "test 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2012",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_TEST_DIALOG DIALOGEX 0, 0, 648, 394
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "t"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "读取A相",IDC_BTN_READ_A,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,370,343,63,10
+    CONTROL         "读取C相",IDC_BTN_READ_C,"Button",BS_AUTORADIOBUTTON,455,
+                    343,63,10
+    CONTROL         "顺序读取ABC相",IDC_BTN_READ_ABC_SEQUENCE,"Button",
+                    BS_AUTORADIOBUTTON,530,341,98,10
+    CONTROL         "读取B相",IDC_BTN_READ_B,"Button",BS_AUTORADIOBUTTON,371,
+                    364,63,10
+    PUSHBUTTON      "零点捕捉测试及Trig测试",IDC_BTN_SEND,350,297,115,14,
+                    WS_DISABLED
+    CONTROL         "同时读取ABC相",IDC_BTN_READ_ABC,"Button",
+                    BS_AUTORADIOBUTTON,457,364,76,10
+    CONTROL         "读取A相角度",IDC_RBTN_A,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,19,79,63,10
+    CONTROL         "读取B相角度",IDC_RBTN_B,"Button",BS_AUTORADIOBUTTON,19,
+                    106,63,10
+    CONTROL         "读取C相角度",IDC_RBTN_C,"Button",BS_AUTORADIOBUTTON,134,
+                    81,63,10
+    CONTROL         "同时读取ABC相角度",IDC_RBTN_ABC,"Button",
+                    BS_AUTORADIOBUTTON,134,106,98,10
+    COMBOBOX        IDC_COMBO_SECTION,258,73,48,51,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_GROUP | WS_TABSTOP
+    CONTROL         "A相触发角度",IDC_RBTN_SET_A,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,19,147,63,10
+    CONTROL         "B相触发角度",IDC_RBTN_SET_B,"Button",BS_AUTORADIOBUTTON,
+                    19,175,63,10
+    CONTROL         "C相触发角度",IDC_RBTN_SET_C,"Button",BS_AUTORADIOBUTTON,
+                    19,203,63,10
+    CONTROL         "ABC三相触发角度",IDC_RBTN_SET_ABC,"Button",
+                    BS_AUTORADIOBUTTON,19,231,63,10
+    COMBOBOX        IDC_COMBO_ANGLE_A,103,146,48,51,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    PUSHBUTTON      "打包/读表",IDC_BTN_DECODE,485,293,50,21,WS_DISABLED
+    COMBOBOX        IDC_COMBO_USER_CMD,453,9,94,52,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "用户命令",IDC_LAB_CMD,366,10,42,9
+    LTEXT           "模块地址 < 131071",IDC_LAB_MODULE_ADDR,366,38,74,12
+    COMBOBOX        IDC_COMBO_MODULE_ADDR,453,39,94,63,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "子表地址",IDC_LAB_SUB_ADDR,366,68,42,12
+    COMBOBOX        IDC_COMBO_SUB_ADDR,453,69,94,70,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "相",IDC_LAB_PHASE,366,98,42,12
+    COMBOBOX        IDC_COMBO_PHASE,455,99,94,49,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "站号",IDC_LAB_STATION_NUMBER,366,128,42,12
+    COMBOBOX        IDC_COMBO_STATION_NUMBER,454,129,94,51,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "冻结倒计时时间",IDC_LAB_CONGEAL_TIME,366,159,66,12
+    COMBOBOX        IDC_COMBO_CONGEAL_TIME,453,159,62,58,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "WPLC",IDC_STATIC,436,0,212,180
+    GROUPBOX        "PC2MCU",IDC_STATIC,436,184,212,58
+    LTEXT           "母线段",IDC_LAB_SECTION_NUMBER,366,195,66,19
+    COMBOBOX        IDC_COMBO_SECTION_NUMBER,453,198,94,58,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "所在线号",IDC_LAB_LINE_NUMBER,366,224,66,12
+    COMBOBOX        IDC_COMBO_LINE_NUMBER,453,221,94,58,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Static",IDC_LAB_PROTO_SEND,19,2,332,44,0,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    GROUPBOX        "触发角度读取",IDC_STATIC,3,66,347,56,BS_CENTER
+    COMBOBOX        IDC_COMBO_ANGLE_B,101,174,48,51,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "读触发角度",IDC_BTN_READ_ANGLE,291,100,57,22,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    COMBOBOX        IDC_COMBO_ANGLE_C,102,202,48,51,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "设置触发角度",IDC_BTN_SET_ANGLE,291,217,57,28,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    CTEXT           "A",IDC_LAB_PHASE2,86,148,8,11
+    CTEXT           "B",IDC_LAB_PHASE3,85,175,8,14
+    CTEXT           "C",IDC_LAB_PHASE4,85,204,8,14
+    GROUPBOX        "设置触发角度",IDC_STATIC,3,124,346,123,BS_CENTER
+    LTEXT           "段地址",IDC_LAB_SUB_ADDR2,221,73,29,14
+    LTEXT           "Static",IDC_LAB_PROTO_READBACK,19,251,329,38,0,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CTEXT           "发\n送\n命\n令",IDC_LAB_CMD2,4,12,14,45
+    CTEXT           "接\n收\n命\n令",IDC_LAB_CMD3,3,252,14,37
+    GROUPBOX        "ABC",IDC_STATIC,436,242,212,52
+    CONTROL         "三相同时触发",IDC_RBTN_B2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,366,253,63,10
+    CONTROL         "三相顺序触发",IDC_RBTN_B3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,483,253,63,10
+    PUSHBUTTON      "三相读表",IDC_BUTTON1,430,274,50,14,WS_DISABLED
+    LTEXT           "段地址",IDC_LAB_SECTION_NUMBER2,199,161,45,11
+    COMBOBOX        IDC_COMBO_SET_ANGLE_SECTION_NUMBER,249,160,48,58,
+                    CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "发送冻结",IDC_BTN_CONGEAL_SEND,529,157,33,14
+    CTEXT           "正向过零点确认",IDC_LAB_CMD4,5,302,69,14
+    CTEXT           "0",IDC_LAB_ZERO_POINT_NUMBER,74,300,74,18
+    PUSHBUTTON      "AD测试",IDC_BTN_AD_TEST,63,48,50,21,WS_DISABLED
+    CTEXT           "0",IDC_LAB_TRIG_NUMBER,215,297,70,14
+    CTEXT           "TRIG:",IDC_LAB_CMD5,171,299,40,14
+    CTEXT           "0",IDC_LAB_READ_DATA,185,224,70,14
+    PUSHBUTTON      "AD读取测试",IDC_BTN_THREAD_TEST,564,295,52,16
+    PUSHBUTTON      "读表",IDC_BTN_READ,580,360,50,21
+    PUSHBUTTON      "停止AD读取测试",IDC_BTN_THREAD_TEST_STOP,564,313,70,16
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "test Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "test\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2012\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "test.EXE\0"
+            VALUE "ProductName", "test 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TEST_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_SECTION, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO_SECTION, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_SECTION, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_SECTION, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_ANGLE_A, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO_ANGLE_A, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMBO_ANGLE_A, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COMBO_ANGLE_A, 0x403, 3, 0
+0x3034, "\000" 
+    IDC_COMBO_USER_CMD, 0x403, 11, 0
+0xc1b6, 0xd0d3, 0xa6b9, 0xe7b5, 0xc8b6, "\000" 
+    IDC_COMBO_USER_CMD, 0x403, 11, 0
+0xc1b6, 0xdece, 0xa6b9, 0xe7b5, 0xc8b6, "\000" 
+    IDC_COMBO_USER_CMD, 0x403, 9, 0
+0xe3b9, 0xa5b2, 0xb3b6, 0xe1bd, "\000" 
+    IDC_COMBO_MODULE_ADDR, 0x403, 5, 0
+0x3231, 0x3433, "\000" 
+    IDC_COMBO_MODULE_ADDR, 0x403, 5, 0
+0x3635, 0x3837, "\000" 
+    IDC_COMBO_MODULE_ADDR, 0x403, 7, 0
+0x3331, 0x3030, 0x3030, "\000" 
+    IDC_COMBO_SUB_ADDR, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO_SUB_ADDR, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_SUB_ADDR, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_SUB_ADDR, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_SUB_ADDR, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_SUB_ADDR, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_SUB_ADDR, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO_PHASE, 0x403, 2, 0
+0x0041, 
+    IDC_COMBO_PHASE, 0x403, 2, 0
+0x0042, 
+    IDC_COMBO_PHASE, 0x403, 2, 0
+0x0043, 
+    IDC_COMBO_STATION_NUMBER, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO_STATION_NUMBER, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_STATION_NUMBER, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_STATION_NUMBER, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_CONGEAL_TIME, 0x403, 4, 0
+0x3033, 0x0030, 
+    IDC_COMBO_CONGEAL_TIME, 0x403, 4, 0
+0x3036, 0x0030, 
+    IDC_COMBO_CONGEAL_TIME, 0x403, 5, 0
+0x3031, 0x3030, "\000" 
+    IDC_COMBO_CONGEAL_TIME, 0x403, 5, 0
+0x3039, 0x3030, "\000" 
+    IDC_COMBO_SECTION_NUMBER, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO_SECTION_NUMBER, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_LINE_NUMBER, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_LINE_NUMBER, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_LINE_NUMBER, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_LINE_NUMBER, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_LINE_NUMBER, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_LINE_NUMBER, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO_LINE_NUMBER, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO_LINE_NUMBER, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_LINE_NUMBER, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO_ANGLE_B, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO_ANGLE_B, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMBO_ANGLE_B, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COMBO_ANGLE_B, 0x403, 3, 0
+0x3034, "\000" 
+    IDC_COMBO_ANGLE_C, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO_ANGLE_C, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMBO_ANGLE_C, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COMBO_ANGLE_C, 0x403, 3, 0
+0x3034, "\000" 
+    IDC_COMBO_SET_ANGLE_SECTION_NUMBER, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO_SET_ANGLE_SECTION_NUMBER, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_SET_ANGLE_SECTION_NUMBER, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_SET_ANGLE_SECTION_NUMBER, 0x403, 2, 0
+0x0033, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 test(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\test.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

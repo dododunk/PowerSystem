@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IFRM", "UI\IFRM.vcxproj", "{F021675B-FD8F-475A-911F-2D66ADB69B11}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "Power_DB", "Power_DB\Power_DB.dsp", "{1021C377-F5DA-4F1E-9E78-2A76EDF31984}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Power_UI", "Power_UI\Power_UI.vcxproj", "{FC10E169-1498-428F-A9E9-CAA69025E36D}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "WorkBench", "WorkBench\WorkBench.dsp", "{0420A002-0E8B-4727-AB85-955D2BB8EEC2}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs11
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Power_UI\\Power_UI.vcxproj
+		SccProjectName1 = Power_UI
+		SccLocalPath1 = Power_UI
+		SccProjectUniqueName2 = UI\\IFRM.vcxproj
+		SccProjectName2 = UI
+		SccLocalPath2 = UI
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Template|Win32 = Template|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F021675B-FD8F-475A-911F-2D66ADB69B11}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F021675B-FD8F-475A-911F-2D66ADB69B11}.Debug|Win32.Build.0 = Debug|Win32
+		{F021675B-FD8F-475A-911F-2D66ADB69B11}.Release|Win32.ActiveCfg = Release|Win32
+		{F021675B-FD8F-475A-911F-2D66ADB69B11}.Release|Win32.Build.0 = Release|Win32
+		{F021675B-FD8F-475A-911F-2D66ADB69B11}.Template|Win32.ActiveCfg = Release|Win32
+		{F021675B-FD8F-475A-911F-2D66ADB69B11}.Template|Win32.Build.0 = Release|Win32
+		{FC10E169-1498-428F-A9E9-CAA69025E36D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FC10E169-1498-428F-A9E9-CAA69025E36D}.Debug|Win32.Build.0 = Debug|Win32
+		{FC10E169-1498-428F-A9E9-CAA69025E36D}.Release|Win32.ActiveCfg = Release|Win32
+		{FC10E169-1498-428F-A9E9-CAA69025E36D}.Release|Win32.Build.0 = Release|Win32
+		{FC10E169-1498-428F-A9E9-CAA69025E36D}.Template|Win32.ActiveCfg = Template|Win32
+		{FC10E169-1498-428F-A9E9-CAA69025E36D}.Template|Win32.Build.0 = Template|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

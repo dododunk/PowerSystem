@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2083CDA6-BF3C-4C3D-BAE0-A640D6E8C29E}</ProjectGuid>
+    <RootNamespace>PowerBench</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <SccProjectName>Svn</SccProjectName>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CLRSupport>true</CLRSupport>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\Power_DB;..\MFCExt;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>NotSet</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>odbc32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>odbc32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReadMe.txt" />
+    <None Include="resource.hm" />
+    <None Include="res\classview.bmp" />
+    <None Include="res\classview_hc.bmp" />
+    <None Include="res\class_view.ico" />
+    <None Include="res\class_view_hc.ico" />
+    <None Include="res\explorer.bmp" />
+    <None Include="res\explorer_hc.bmp" />
+    <None Include="res\fileview.bmp" />
+    <None Include="res\fileview_hc.bmp" />
+    <None Include="res\file_view.ico" />
+    <None Include="res\file_view_hc.ico" />
+    <None Include="res\menuimages.bmp" />
+    <None Include="res\menuimages_hc.bmp" />
+    <None Include="res\nav_large.bmp" />
+    <None Include="res\nav_large_hc.bmp" />
+    <None Include="res\output_wnd.ico" />
+    <None Include="res\output_wnd_hc.ico" />
+    <None Include="res\pages.bmp" />
+    <None Include="res\pages_hc.bmp" />
+    <None Include="res\pages_small.bmp" />
+    <None Include="res\pages_small_hc.bmp" />
+    <None Include="res\PowerBench.ico" />
+    <None Include="res\PowerBench.rc2" />
+    <None Include="res\PowerBenchDoc.ico" />
+    <None Include="res\properties.bmp" />
+    <None Include="res\properties_hc.bmp" />
+    <None Include="res\properties_wnd.ico" />
+    <None Include="res\properties_wnd_hc.ico" />
+    <None Include="res\sort.bmp" />
+    <None Include="res\sort_hc.bmp" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\Toolbar256.bmp" />
+    <None Include="UserImages.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ActionEnum.h" />
+    <ClInclude Include="AppInfoMgr.h" />
+    <ClInclude Include="BaseForm.h" />
+    <ClInclude Include="BaseFormFactory.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="CtrlGridHoldDlg.h" />
+    <ClInclude Include="CtrlHistoryHoldDlg.h" />
+    <ClInclude Include="CtrlholdDlg.h" />
+    <ClInclude Include="AmmeterView.h" />
+    <ClInclude Include="CtrlMessageHostDlg.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="OutputWnd.h" />
+    <ClInclude Include="PowerBench.h" />
+    <ClInclude Include="PowerBenchDoc.h" />
+    <ClInclude Include="PowerBenchView.h" />
+    <ClInclude Include="PropertiesView.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="USingleApp.h" />
+    <ClInclude Include="ViewTree.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AppInfoMgr.cpp" />
+    <ClCompile Include="BaseForm.cpp" />
+    <ClCompile Include="BaseFormFactory.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="AmmeterView.cpp" />
+    <ClCompile Include="CtrlGridHoldDlg.cpp" />
+    <ClCompile Include="CtrlHistoryHoldDlg.cpp" />
+    <ClCompile Include="CtrlholdDlg.cpp" />
+    <ClCompile Include="CtrlMessageHostDlg.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="OutputWnd.cpp" />
+    <ClCompile Include="PowerBench.cpp" />
+    <ClCompile Include="PowerBenchDoc.cpp" />
+    <ClCompile Include="PowerBenchView.cpp" />
+    <ClCompile Include="PropertiesView.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="USingleApp.cpp" />
+    <ClCompile Include="ViewTree.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PowerBench.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\API\pc_2010_0624\test.vcxproj">
+      <Project>{eb86bca6-e120-4f67-a680-c927a850e38b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\lib\Tigera.LibBasic\Tigera.LibBasic.csproj">
+      <Project>{14c16557-d697-48ac-ae36-cad81fcb9c24}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\lib\Tigera.LibCodeUtils\Tigera.LibCodeUtils.csproj">
+      <Project>{7e368865-7d2e-422b-a057-1082b5c12fbe}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\lib\Tigera.LibCommon\Tigera.LibCommon.csproj">
+      <Project>{d188a9ef-1f3d-4b3b-bbf2-42357d7c7161}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\lib\Tigera.LibDataStruct\Tigera.LibDataStruct.csproj">
+      <Project>{3de17188-c741-4848-a20a-1a9f51036601}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\lib\Tigera.LibNetwork\Tigera.LibNetwork.csproj">
+      <Project>{b1c0c107-d9cf-453f-a9d2-cd468c2eda93}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tradesystem\basic\Tigera.T_Definition\Tigera.T_Definition.csproj">
+      <Project>{d3b4b819-3492-4b5e-b1e5-9a7f96300ea4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\P3761Cls\P3761Cls.csproj">
+      <Project>{baac097c-aa4a-4981-b4f9-213d02decfb8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\P3761Ctl\P3761Ctl.csproj">
+      <Project>{3febb22e-360c-4f30-808c-ddc039e0018b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\PowerBenchSharpLib\PowerBenchSharpLib.csproj">
+      <Project>{eebd807c-1cca-4927-9c33-e9ca45541f28}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Tigera.LibNetworkWrap\Tigera.LibNetworkWrap.csproj">
+      <Project>{7b7e47d8-6427-4987-9017-0c7dd77a3773}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Tigera.UICommon\Tigera.UICommon.csproj">
+      <Project>{585549e2-90ec-43e2-964b-d7241419dbba}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="PowerBench.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

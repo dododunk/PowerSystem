@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{C3E7E07A-B1D6-4834-A81A-0F2D2356DC30}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>GB698Cls</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>GB698Cls</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContainer.Designer.cs">
+      <DependentUpon>FormContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AFNForms\A2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\A25.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\A3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\A4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\A5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\A6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\A9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Cls\DLT698AFN.cs" />
+    <Compile Include="GB698Cls\DlT698MessageLogHelper.cs" />
+    <Compile Include="Serial\DeviceManagement.cs" />
+    <Compile Include="ZYSocket.Server\SocketAccepter.cs" />
+    <Compile Include="_Helper\ActiveReportMsg.cs" />
+    <Compile Include="AFNForms\AFN03_01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_08.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_09.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_17.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_18.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_19.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_21.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_22.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_23.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_25.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_26.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_27.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_28.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_30.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_31.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_33.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_33_SD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_34.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_35.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_36.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_37.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_38.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_41.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_42.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_43.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_44.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_45.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_46.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_47.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_48.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_49.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_57.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_58.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_59.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_60.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_61.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_65.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_67.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_73.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_74.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_75.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_76.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_81.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_83.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_85.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN04_89.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN05_01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN05_09.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN05_12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN05_25.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN05_31.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN05_32.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN05_41.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN05_49.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN05_59.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN06_01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN0A_10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN0A_38.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN0B_02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN0D_01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN0D_73.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN0E_01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN0F_01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN10_01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN10_01_Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN10_09.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN10_10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFNForms\AFN10_11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Helper\BufferManager.cs" />
+    <Compile Include="GB698Cls\TCPClientInfo.cs" />
+    <Compile Include="GB698Cls\CtlWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Cls\CustomizeInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Cls\DataParse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Cls\DLT645.cs" />
+    <Compile Include="GB698Cls\DLT698Message.cs" />
+    <Compile Include="GB698Cls\DLT698Opera.cs" />
+    <Compile Include="GB698Cls\DLT698_Recv.cs" />
+    <Compile Include="GB698Cls\DLT698_Send.cs" />
+    <Compile Include="GB698Cls\FormFactory.cs" />
+    <Compile Include="GB698Cls\iForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Cls\InputPN.cs" />
+    <Compile Include="GB698Cls\MenuContext.cs" />
+    <Compile Include="GB698Cls\LogMSG.cs" />
+    <Compile Include="_Helper\DataConvert.cs" />
+    <Compile Include="ZYSocket.Server\NetWorkerTCP.cs" />
+    <Compile Include="ZYSocket.Server\NetWorkerUDP.cs" />
+    <Compile Include="GB698Cls\ProtocolTree.cs" />
+    <Compile Include="_Helper\PubFunction.cs" />
+    <Compile Include="_Helper\RecieveLog.cs" />
+    <Compile Include="Serial\SerialPort.cs" />
+    <Compile Include="GB698Cls\ShowTxt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Helper\stream.cs" />
+    <Compile Include="_Helper\LogWritter.cs" />
+    <Compile Include="SocketUdpCore\BufferManager.cs" />
+    <Compile Include="SocketUdpCore\SocketAsyncEventArgsPool.cs" />
+    <Compile Include="SocketUdpCore\UdpReceiveSocket.cs" />
+    <Compile Include="SocketUdpCore\UdpSendSocket.cs" />
+    <Compile Include="System.Windows.Forms\CheckBoxComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System.Windows.Forms\CheckBoxComboBoxItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System.Windows.Forms\CheckBoxComboBoxItemList.cs" />
+    <Compile Include="System.Windows.Forms\CheckBoxComboBoxListControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System.Windows.Forms\CheckBoxComboBoxListControlContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="System.Windows.Forms\CheckBoxProperties.cs" />
+    <Compile Include="System.Windows.Forms\GripBounds.cs" />
+    <Compile Include="System.Windows.Forms\ListSelectionWrapper.cs" />
+    <Compile Include="System.Windows.Forms\NativeMethods.cs" />
+    <Compile Include="System.Windows.Forms\ObjectSelectionWrapper.cs" />
+    <Compile Include="System.Windows.Forms\Popup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System.Windows.Forms\PopupComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ZYSocket.Server\BinaryInputHandler.cs" />
+    <Compile Include="ZYSocket.Server\BufferManager.cs" />
+    <Compile Include="ZYSocket.Server\ConnectionFilter.cs" />
+    <Compile Include="ZYSocket.Server\LogOutEventArgs.cs" />
+    <Compile Include="ZYSocket.Server\LogType.cs" />
+    <Compile Include="ZYSocket.Server\MessageInputHandler.cs" />
+    <Compile Include="ZYSocket.Server\SocketAsyncEventArgsPool.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AFNForms\A25.resx">
+      <DependentUpon>A25.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AFNForms\A9.resx">
+      <DependentUpon>A9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AFNForms\AFN04_01.resx">
+      <DependentUpon>AFN04_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AFNForms\AFN04_02.resx">
+      <DependentUpon>AFN04_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AFNForms\AFN04_08.resx">
+      <DependentUpon>AFN04_08.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AFNForms\AFN04_23.resx">
+      <DependentUpon>AFN04_23.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AFNForms\AFN04_42.resx">
+      <DependentUpon>AFN04_42.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AFNForms\AFN04_57.resx">
+      <DependentUpon>AFN04_57.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AFNForms\AFN05_31.resx">
+      <DependentUpon>AFN05_31.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AFNForms\AFN0B_02.resx">
+      <DependentUpon>AFN0B_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AFNForms\AFN0D_01.resx">
+      <DependentUpon>AFN0D_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AFNForms\AFN0D_73.resx">
+      <DependentUpon>AFN0D_73.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContainer.resx">
+      <DependentUpon>FormContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GB698Cls\CtlWord.resx">
+      <DependentUpon>CtlWord.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\lib\Tigera.LibNetwork\Tigera.LibNetwork.csproj">
+      <Project>{B1C0C107-D9CF-453F-A9D2-CD468C2EDA93}</Project>
+      <Name>Tigera.LibNetwork</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

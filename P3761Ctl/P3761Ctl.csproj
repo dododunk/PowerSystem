@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{3FEBB22E-360C-4F30-808C-DDC039E0018B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>GB698Ctl</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>GB698Ctl</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActiveReportDLT698\DLT698.cs" />
+    <Compile Include="ActiveReportDLT698\PubFunction.cs" />
+    <Compile Include="GB698Ctl.Properties\AssemblyInfo.cs" />
+    <Compile Include="GB698Ctl\UCAddressList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\UCFrameParse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl.Properties\Resources.cs" />
+    <Compile Include="GB698Ctl.Properties\Strings.cs" />
+    <Compile Include="GB698Ctl\ActiveReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\AddressList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\AF10F1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\AF10F9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\AF10F9Config.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\Customize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\CustomizeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\CustomizeDel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\DataOpera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\DataParse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\DBDataBase.cs" />
+    <Compile Include="GB698Ctl\DLT645Prot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\FaDataBase.cs" />
+    <Compile Include="GB698Ctl\FrameDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\FrameParse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\FrmParse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\GB698Items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\GB698Opera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\IniFile.cs" />
+    <Compile Include="GB698Ctl\iSearch.cs" />
+    <Compile Include="GB698Ctl\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\mForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\MyExcel.cs" />
+    <Compile Include="GB698Ctl\NetReceive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\NetStartUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\NetStartUserControl.Designer.cs">
+      <DependentUpon>NetStartUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GB698Ctl\OtherOpera.cs" />
+    <Compile Include="GB698Ctl\Program.cs" />
+    <Compile Include="GB698Ctl\PubFunction.cs" />
+    <Compile Include="GB698Ctl\RW698Data.cs" />
+    <Compile Include="GB698Ctl\SysAssert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\SysConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\SysConst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\TimingTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GB698Ctl\ToolWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GB698Ctl.Properties\Resources.resx">
+      <DependentUpon>Resources.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GB698Ctl.Properties\Strings.resx">
+      <DependentUpon>Strings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GB698Ctl\AddressList.resx">
+      <DependentUpon>AddressList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GB698Ctl\AF10F1.resx">
+      <DependentUpon>AF10F1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GB698Ctl\AF10F9.resx">
+      <DependentUpon>AF10F9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GB698Ctl\CustomizeAdd.resx">
+      <DependentUpon>CustomizeAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GB698Ctl\CustomizeDel.resx">
+      <DependentUpon>CustomizeDel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GB698Ctl\DataOpera.resx">
+      <DependentUpon>DataOpera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GB698Ctl\FrameParse.resx">
+      <DependentUpon>FrameParse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GB698Ctl\GB698Items.resx">
+      <DependentUpon>GB698Items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GB698Ctl\GB698Opera.resx">
+      <DependentUpon>GB698Opera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GB698Ctl\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GB698Ctl\NetStartUserControl.resx">
+      <DependentUpon>NetStartUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GB698Ctl\SysAssert.resx">
+      <DependentUpon>SysAssert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GB698Ctl\SysConfig.resx">
+      <DependentUpon>SysConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GB698Ctl\SysConst.resx">
+      <DependentUpon>SysConst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GB698Ctl\TimingTask.resx">
+      <DependentUpon>TimingTask.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\P3761Cls\P3761Cls.csproj">
+      <Project>{C3E7E07A-B1D6-4834-A81A-0F2D2356DC30}</Project>
+      <Name>P3761Cls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tigera.UICommon\Tigera.UICommon.csproj">
+      <Project>{585549E2-90EC-43E2-964B-D7241419DBBA}</Project>
+      <Name>Tigera.UICommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

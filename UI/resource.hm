@@ -1,0 +1,6 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by IFRM.rc
+//
+#define HIDC_COMBOKINDS                 0x80690456    // CG_IDD_MYDIALOGBAR
+#define HIDC_COMPANY                    0x80a605f6    // IDD_USERINFO
+#define HIDC_RADIO1                     0x80690433    // CG_IDD_MYDIALOGBAR

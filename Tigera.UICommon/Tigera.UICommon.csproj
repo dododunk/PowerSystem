@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{585549E2-90EC-43E2-964B-D7241419DBBA}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>DotNetCtl</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DotNetCtl.Properties\Resources.cs" />
+    <Compile Include="EasyRender_CustomTheme\ArrowDisplay.cs" />
+    <Compile Include="EasyRender_CustomTheme\BlendRender.cs" />
+    <Compile Include="EasyRender_CustomTheme\ButtonType.cs" />
+    <Compile Include="EasyRender_CustomTheme\EasyRender.cs" />
+    <Compile Include="EasyRender_CustomTheme\GripType.cs" />
+    <Compile Include="EasyRender_CustomTheme\IButton.cs" />
+    <Compile Include="EasyRender_CustomTheme\IDropDownButton.cs" />
+    <Compile Include="EasyRender_CustomTheme\IMenustrip.cs" />
+    <Compile Include="EasyRender_CustomTheme\InheritenceType.cs" />
+    <Compile Include="EasyRender_CustomTheme\IPanel.cs" />
+    <Compile Include="EasyRender_CustomTheme\ISplitButton.cs" />
+    <Compile Include="EasyRender_CustomTheme\IStatusBar.cs" />
+    <Compile Include="EasyRender_CustomTheme\IToolstrip.cs" />
+    <Compile Include="EasyRender_CustomTheme\IToolstripControls.cs" />
+    <Compile Include="EasyRender_CustomTheme\RenderingMode.cs" />
+    <Compile Include="EasyRender_VS2010Theme\ArrowDisplay.cs" />
+    <Compile Include="EasyRender_VS2010Theme\BlendRender.cs" />
+    <Compile Include="EasyRender_VS2010Theme\ButtonType.cs" />
+    <Compile Include="EasyRender_VS2010Theme\EasyRender.cs" />
+    <Compile Include="EasyRender_VS2010Theme\GripType.cs" />
+    <Compile Include="EasyRender_VS2010Theme\IButton.cs" />
+    <Compile Include="EasyRender_VS2010Theme\IDropDownButton.cs" />
+    <Compile Include="EasyRender_VS2010Theme\IMenustrip.cs" />
+    <Compile Include="EasyRender_VS2010Theme\InheritenceType.cs" />
+    <Compile Include="EasyRender_VS2010Theme\IPanel.cs" />
+    <Compile Include="EasyRender_VS2010Theme\ISplitButton.cs" />
+    <Compile Include="EasyRender_VS2010Theme\IStatusBar.cs" />
+    <Compile Include="EasyRender_VS2010Theme\IToolstrip.cs" />
+    <Compile Include="EasyRender_VS2010Theme\IToolstripControls.cs" />
+    <Compile Include="EasyRender_VS2010Theme\RenderingMode.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\BlipSignature.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\BlipType.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\EscherRecord.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\EscherRecordType.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtAlignRule.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtAnchor.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtArcRule.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtBlip.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtBlipBitmapDIB.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtBlipBitmapJPEG.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtBlipBitmapPNG.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtBlipEnd.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtBlipMetafileEMF.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtBlipMetafilePICT.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtBlipMetafileWMF.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtBlipStart.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtBSE.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtBstoreContainer.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtCalloutRule.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtChildAnchor.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtClientAnchor.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtClientData.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtClientRule.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtClientTextbox.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtCLSID.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtColorMRU.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtColorScheme.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtConnectorRule.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtContainer.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtDeletedPspl.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtDg.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtDgContainer.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtDgg.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtDggContainer.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtOleObject.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtOPT.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtRegroupItems.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtSelection.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtSolverContainer.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtSp.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtSpContainer.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtSpgr.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtSpgrContainer.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtSplitMenuColors.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\MsofbtTextbox.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\PropertyIDs.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\ShapeFlag.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\ShapeProperty.cs" />
+    <Compile Include="ExcelLibrary.BinaryDrawingFormat\ShapeType.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\ARRAY.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\BACKUP.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\BITMAP.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\BLANK.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\BOF.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\BOOKBOOL.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\BOOLERR.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\BOTTOMMARGIN.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\BOUNDSHEET.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\CALCCOUNT.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\CALCMODE.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\CellFormatCollection.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\CellValue.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\ClipboardFormat.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\CODEPAGE.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\COLINFO.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\ColorPalette.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\CommonObjectData.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\CONTINUE.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\DATEMODE.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\DBCELL.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\DEFCOLWIDTH.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\DIMENSIONS.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\End.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\EOF.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\ErrorCode.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\EXTSST.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\FONT.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\FORMAT.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\FORMULA.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\GroupMarker.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\LABELSST.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\MSOCONTAINER.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\MSODRAWING.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\MSODRAWINGGROUP.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\MSODRAWINGSELECTION.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\MULBLANK.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\MULRK.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\NUMBER.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\OBJ.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\PALETTE.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\PictureOption.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\Record.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\RecordType.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\RichTextFormat.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\RK.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\ROW.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\RSTRING.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\SharedResource.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\SST.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\STANDARDWIDTH.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\StreamType.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\STRING.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\StringDecoder.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\StringOffset.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\SubRecord.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\SubRecordType.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\WINDOW1.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\WorkbookDecoder.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\WorkbookEncoder.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\WorksheetDecoder.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\WorkSheetEncoder.cs" />
+    <Compile Include="ExcelLibrary.BinaryFileFormat\XF.cs" />
+    <Compile Include="ExcelLibrary.CompoundDocumentFormat\ByteOrderMarks.cs" />
+    <Compile Include="ExcelLibrary.CompoundDocumentFormat\CompoundDocument.cs" />
+    <Compile Include="ExcelLibrary.CompoundDocumentFormat\CompoundFileHeader.cs" />
+    <Compile Include="ExcelLibrary.CompoundDocumentFormat\DirectoryEntry.cs" />
+    <Compile Include="ExcelLibrary.CompoundDocumentFormat\DirectoryTree.cs" />
+    <Compile Include="ExcelLibrary.CompoundDocumentFormat\EntryType.cs" />
+    <Compile Include="ExcelLibrary.CompoundDocumentFormat\FileHeader.cs" />
+    <Compile Include="ExcelLibrary.CompoundDocumentFormat\MasterSectorAllocation.cs" />
+    <Compile Include="ExcelLibrary.CompoundDocumentFormat\NodeColor.cs" />
+    <Compile Include="ExcelLibrary.CompoundDocumentFormat\SectorAllocation.cs" />
+    <Compile Include="ExcelLibrary.CompoundDocumentFormat\ShortSectorAllocation.cs" />
+    <Compile Include="ExcelLibrary.CompoundDocumentFormat\SID.cs" />
+    <Compile Include="ExcelLibrary.SpreadSheet\Cell.cs" />
+    <Compile Include="ExcelLibrary.SpreadSheet\CellAnchor.cs" />
+    <Compile Include="ExcelLibrary.SpreadSheet\CellCollection.cs" />
+    <Compile Include="ExcelLibrary.SpreadSheet\CellFormat.cs" />
+    <Compile Include="ExcelLibrary.SpreadSheet\CellFormatType.cs" />
+    <Compile Include="ExcelLibrary.SpreadSheet\CellStyle.cs" />
+    <Compile Include="ExcelLibrary.SpreadSheet\ColumnWidth.cs" />
+    <Compile Include="ExcelLibrary.SpreadSheet\Image.cs" />
+    <Compile Include="ExcelLibrary.SpreadSheet\Picture.cs" />
+    <Compile Include="ExcelLibrary.SpreadSheet\Row.cs" />
+    <Compile Include="ExcelLibrary.SpreadSheet\SheetType.cs" />
+    <Compile Include="ExcelLibrary.SpreadSheet\Workbook.cs" />
+    <Compile Include="ExcelLibrary.SpreadSheet\Worksheet.cs" />
+    <Compile Include="ExcelLibrary\DataSetHelper.cs" />
+    <Compile Include="QiHe.CodeLib\Algorithm.cs" />
+    <Compile Include="QiHe.CodeLib\Bin2Hex.cs" />
+    <Compile Include="QiHe.CodeLib\BinarySearchTreeBase.cs" />
+    <Compile Include="QiHe.CodeLib\BinaryTreeNodeBase.cs" />
+    <Compile Include="QiHe.CodeLib\BinFile.cs" />
+    <Compile Include="QiHe.CodeLib\FileSelector.cs" />
+    <Compile Include="QiHe.CodeLib\FileType.cs" />
+    <Compile Include="QiHe.CodeLib\NodeColor.cs" />
+    <Compile Include="QiHe.CodeLib\Pair.cs" />
+    <Compile Include="QiHe.CodeLib\RedBlackTree.cs" />
+    <Compile Include="QiHe.CodeLib\RedBlackTreeNode.cs" />
+    <Compile Include="QiHe.CodeLib\StreamHelper.cs" />
+    <Compile Include="QiHe.CodeLib\TextEncoding.cs" />
+    <Compile Include="QiHe.CodeLib\TxtFile.cs" />
+    <Compile Include="QiHe.CodeLib\UniqueList.cs" />
+    <Compile Include="QiHe.CodeLib\XmlData.cs" />
+    <Compile Include="QiHe.CodeLib\XmlFile.cs" />
+    <Compile Include="resfinder.cs" />
+    <Compile Include="System.Windows.Forms\AntiAliasGraphics.cs" />
+    <Compile Include="System.Windows.Forms\AreaHeaderStyle.cs" />
+    <Compile Include="System.Windows.Forms\CollapseDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System.Windows.Forms\CollapseDataGridViewRow.cs" />
+    <Compile Include="System.Windows.Forms\CollapseDataGridViewRowCollection.cs" />
+    <Compile Include="System.Windows.Forms\ControlBoxManager.cs" />
+    <Compile Include="System.Windows.Forms\ControlBoxState.cs" />
+    <Compile Include="System.Windows.Forms\ControlBoxStyle.cs" />
+    <Compile Include="System.Windows.Forms\ControlPaintEx.cs" />
+    <Compile Include="System.Windows.Forms\DatagridViewCheckBoxHeader.cs" />
+    <Compile Include="System.Windows.Forms\DataGridViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System.Windows.Forms\GraphicsPathHelper.cs" />
+    <Compile Include="System.Windows.Forms\HeaderStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System.Windows.Forms\InputType.cs" />
+    <Compile Include="System.Windows.Forms\IPTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="System.Windows.Forms\MouseOperate.cs" />
+    <Compile Include="System.Windows.Forms\NativeMethods.cs" />
+    <Compile Include="System.Windows.Forms\RenderHelper.cs" />
+    <Compile Include="System.Windows.Forms\RichTextBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System.Windows.Forms\RoundStyle.cs" />
+    <Compile Include="System.Windows.Forms\SkinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System.Windows.Forms\SkinFormBackgroundRenderEventArgs.cs" />
+    <Compile Include="System.Windows.Forms\SkinFormBackgroundRenderEventHandler.cs" />
+    <Compile Include="System.Windows.Forms\SkinFormBorderRenderEventArgs.cs" />
+    <Compile Include="System.Windows.Forms\SkinFormBorderRenderEventHandler.cs" />
+    <Compile Include="System.Windows.Forms\SkinFormCaptionRenderEventArgs.cs" />
+    <Compile Include="System.Windows.Forms\SkinFormCaptionRenderEventHandler.cs" />
+    <Compile Include="System.Windows.Forms\SkinFormColorTable.cs" />
+    <Compile Include="System.Windows.Forms\SkinFormColorTable_CustomTheme.cs" />
+    <Compile Include="System.Windows.Forms\SkinFormColorTable_VS2010Theme.cs" />
+    <Compile Include="System.Windows.Forms\SkinFormControlBoxRenderEventArgs.cs" />
+    <Compile Include="System.Windows.Forms\SkinFormControlBoxRenderEventHandler.cs" />
+    <Compile Include="System.Windows.Forms\SkinFormProfessionalRenderer.cs" />
+    <Compile Include="System.Windows.Forms\SkinFormRenderer.cs" />
+    <Compile Include="System.Windows.Forms\ToolTipEx_NativeMethods.cs" />
+    <Compile Include="WinFormsUI.Docking.Win32\FlagsSetWindowPos.cs" />
+    <Compile Include="WinFormsUI.Docking.Win32\GetWindowLongIndex.cs" />
+    <Compile Include="WinFormsUI.Docking.Win32\HitTest.cs" />
+    <Compile Include="WinFormsUI.Docking.Win32\HookType.cs" />
+    <Compile Include="WinFormsUI.Docking.Win32\Msgs.cs" />
+    <Compile Include="WinFormsUI.Docking.Win32\ScrollBars.cs" />
+    <Compile Include="WinFormsUI.Docking.Win32\ShowWindowStyles.cs" />
+    <Compile Include="WinFormsUI.Docking.Win32\WindowExStyles.cs" />
+    <Compile Include="WinFormsUI.Docking.Win32\WindowStyles.cs" />
+    <Compile Include="WinFormsUI.Docking\AutoHideStripBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinFormsUI.Docking\AutoHideStripConverter.cs" />
+    <Compile Include="WinFormsUI.Docking\AutoHideStripSkin.cs" />
+    <Compile Include="WinFormsUI.Docking\DeserializeDockContent.cs" />
+    <Compile Include="WinFormsUI.Docking\DockAlignment.cs" />
+    <Compile Include="WinFormsUI.Docking\DockAreas.cs" />
+    <Compile Include="WinFormsUI.Docking\DockAreasEditor.cs" />
+    <Compile Include="WinFormsUI.Docking\DockContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormsUI.Docking\DockContentCollection.cs" />
+    <Compile Include="WinFormsUI.Docking\DockContentEventArgs.cs" />
+    <Compile Include="WinFormsUI.Docking\DockContentHandler.cs" />
+    <Compile Include="WinFormsUI.Docking\DockHelper.cs" />
+    <Compile Include="WinFormsUI.Docking\DockingHelper.cs" />
+    <Compile Include="WinFormsUI.Docking\DockOutlineBase.cs" />
+    <Compile Include="WinFormsUI.Docking\DockPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinFormsUI.Docking\DockPaneCaptionBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinFormsUI.Docking\DockPaneCollection.cs" />
+    <Compile Include="WinFormsUI.Docking\DockPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinFormsUI.Docking\DockPanelExtender.cs" />
+    <Compile Include="WinFormsUI.Docking\DockPanelGradient.cs" />
+    <Compile Include="WinFormsUI.Docking\DockPanelGradientConverter.cs" />
+    <Compile Include="WinFormsUI.Docking\DockPanelSkin.cs" />
+    <Compile Include="WinFormsUI.Docking\DockPanelSkinConverter.cs" />
+    <Compile Include="WinFormsUI.Docking\DockPaneStripBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinFormsUI.Docking\DockPaneStripConverter.cs" />
+    <Compile Include="WinFormsUI.Docking\DockPaneStripGradient.cs" />
+    <Compile Include="WinFormsUI.Docking\DockPaneStripGradientConverter.cs" />
+    <Compile Include="WinFormsUI.Docking\DockPaneStripSkin.cs" />
+    <Compile Include="WinFormsUI.Docking\DockPaneStripToolWindowGradient.cs" />
+    <Compile Include="WinFormsUI.Docking\DockPaneTabGradientConverter.cs" />
+    <Compile Include="WinFormsUI.Docking\DockState.cs" />
+    <Compile Include="WinFormsUI.Docking\DockWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinFormsUI.Docking\DockWindowCollection.cs" />
+    <Compile Include="WinFormsUI.Docking\DocumentStyle.cs" />
+    <Compile Include="WinFormsUI.Docking\DocumentTabStripLocation.cs" />
+    <Compile Include="WinFormsUI.Docking\DragForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormsUI.Docking\DrawHelper.cs" />
+    <Compile Include="WinFormsUI.Docking\DummyControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinFormsUI.Docking\FloatWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormsUI.Docking\FloatWindowCollection.cs" />
+    <Compile Include="WinFormsUI.Docking\GetPersistStringCallback.cs" />
+    <Compile Include="WinFormsUI.Docking\IContentFocusManager.cs" />
+    <Compile Include="WinFormsUI.Docking\IDockContent.cs" />
+    <Compile Include="WinFormsUI.Docking\IDockDragSource.cs" />
+    <Compile Include="WinFormsUI.Docking\IDragSource.cs" />
+    <Compile Include="WinFormsUI.Docking\InertButtonBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinFormsUI.Docking\INestedPanesContainer.cs" />
+    <Compile Include="WinFormsUI.Docking\ISplitterDragSource.cs" />
+    <Compile Include="WinFormsUI.Docking\LocalizedCategoryAttribute.cs" />
+    <Compile Include="WinFormsUI.Docking\LocalizedDescriptionAttribute.cs" />
+    <Compile Include="WinFormsUI.Docking\MeasurePane.cs" />
+    <Compile Include="WinFormsUI.Docking\Measures.cs" />
+    <Compile Include="WinFormsUI.Docking\NativeMethods.cs" />
+    <Compile Include="WinFormsUI.Docking\NestedDockingStatus.cs" />
+    <Compile Include="WinFormsUI.Docking\NestedPaneCollection.cs" />
+    <Compile Include="WinFormsUI.Docking\ResourceHelper.cs" />
+    <Compile Include="WinFormsUI.Docking\Resources.cs" />
+    <Compile Include="WinFormsUI.Docking\SplitterBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinFormsUI.Docking\Strings.cs" />
+    <Compile Include="WinFormsUI.Docking\TabGradient.cs" />
+    <Compile Include="WinFormsUI.Docking\VisibleNestedPaneCollection.cs" />
+    <Compile Include="WinFormsUI.Docking\VS2005AutoHideStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinFormsUI.Docking\VS2005DockPaneCaption.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinFormsUI.Docking\VS2005DockPaneStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinFormsUI.Docking\Win32Helper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DotNetCtl.Properties\Resources.resources" />
+    <EmbeddedResource Include="WinFormsUI.Docking\Resources.resources" />
+    <EmbeddedResource Include="WinFormsUI.Docking\Strings.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

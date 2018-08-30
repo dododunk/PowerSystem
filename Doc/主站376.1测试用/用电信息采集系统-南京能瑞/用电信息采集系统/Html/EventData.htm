@@ -1,0 +1,17 @@
+<meta http-equiv='Content-Type' content='text/html; charset=gb2312'>
+<script language='javascript'> 
+ function SetItemHide(objName ,imgObject) 
+ { 
+ if (objName.style) { 
+if (objName.style.display=='none') { objName.style.display='inline' ; imgObject.src = '..\\res\\mnode.gif'; } 
+ else { 
+ objName.style.display='none' ; imgObject.src = '..\\res\\pnode.gif'; } 
+ } } 
+ </script> 
+<style type=text/css><!--
+ body,td,th {font-family: 宋体;	font-size: 12px;} 
+ body {margin-left: 5px;margin-top: 5px;}
+--></style>
+<table border=0 cellspacing=0 cellpadding=0 width=100% ><tr align=left><td colspan=2  style=cursor:hand onClick='SetItemHide(TDEvent_All ,ImgEvent_All)'><img id=ImgEvent_All src='..\res\mnode.gif' ><strong>全部事件记录</strong></td></tr>
+<tr><td height=10 colspan=2 align=left ></td></tr>
+<tr id=TDEvent_All style='display:inline ;' > <td width=20 >&nbsp;</td><td width=770 ><table width=100% border=0 cellpadding=0 cellspacing=0></table></td></tr></table>

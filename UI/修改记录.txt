@@ -1,0 +1,343 @@
+=======================================================
+修改编号：1
+修改版本：1.90f
+修改时间：2010-08-11
+修改人员：limz
+修改问题：菜单->读表操作->驻留和无功补偿设置-> 表计种类设置驻留
+对话框中空数据不能入库.
+修改记录： 表计驻留日期为空的情况下，默认读表内容为空，禁止自动驻留，允许空数据入库
+void CAutoDateReadModule::OnOK() 函数中增加如下操作
+//end for(int i = 0; i < 93; i ++)
+if(i>=93)
+	{
+		if(!m_OK)//对象子选框均为无效
+		{
+            m_check1=FALSE;
+			m_radio1=FALSE;
+			m_check2=FALSE;
+			m_radio2=FALSE;
+			m_check3=FALSE;
+			m_check4=FALSE;
+			m_check5=FALSE;
+			m_check6=FALSE;
+			m_check7=FALSE;
+			m_check8=FALSE;
+			m_check9=FALSE;
+			m_check10=FALSE;
+		}
+	
+	}
+
+//in if(DLG.DoModal() == IDOK) 
+{
+	//end if(m_check10)
+	if(!m_OK)
+		CDialog::OnCancel();
+	else
+		CDialog::OnOK();
+}
+删除如下语句:
+/*
+	if(!m_OK)
+	{
+		MessageBox("请先选择居民表或大用户表或台变等表\r\n的读表日期！","",MB_OK|MB_ICONWARNING);
+		return;
+	}
+ */   
+/*	
+	if(!m_OK)
+	{
+		MessageBox("请选择模块表的读表内容！","",MB_OK|MB_ICONWARNING);
+		return;
+	}
+*/
+增加屏蔽读表读数等
+在函数void CAutoDateReadModule::OnAllclear() 最后增加如下语句
+//屏蔽读表内容等设置
+         CWnd* pt = GetDlgItem(IDC_CHECK101);
+         pt->EnableWindow(FALSE);
+         pt = GetDlgItem(IDC_CHECK102);
+         pt->EnableWindow(FALSE);
+		 pt = GetDlgItem(IDC_CHECK103);
+         pt->EnableWindow(FALSE);
+		 pt = GetDlgItem(IDC_CHECK104);
+         pt->EnableWindow(FALSE);
+		 pt = GetDlgItem(IDC_CHECK105);
+         pt->EnableWindow(FALSE);
+		 pt = GetDlgItem(IDC_CHECK106);
+         pt->EnableWindow(FALSE);
+		 pt = GetDlgItem(IDC_CHECK107);
+         pt->EnableWindow(FALSE);
+		 pt = GetDlgItem(IDC_CHECK108);
+         pt->EnableWindow(FALSE);
+		 pt = GetDlgItem(IDC_CHECK109);
+         pt->EnableWindow(FALSE);
+		 pt = GetDlgItem(IDC_RADIO22);
+         pt->EnableWindow(FALSE);
+		 pt = GetDlgItem(IDC_RADIO23);
+         pt->EnableWindow(FALSE);
+		 pt = GetDlgItem(IDC_RADIO28);
+         pt->EnableWindow(FALSE);
+		 pt = GetDlgItem(IDC_RADIO29);
+         pt->EnableWindow(FALSE);
+         pt = GetDlgItem(IDC_CHECK1);
+         pt->EnableWindow(FALSE);
+		 pt = GetDlgItem(IDC_EDIT35);
+         pt->EnableWindow(FALSE);
+		 pt = GetDlgItem(IDC_EDIT37);
+         pt->EnableWindow(FALSE);
+		 pt = GetDlgItem(IDC_EDIT1);
+         pt->EnableWindow(FALSE);
+         UpdateData(TRUE);
+
+========================================================
+=======================================================
+修改编号：2
+修改版本：1.90F
+修改时间：2010-08-16 14:29
+修改人员：LIMZ
+修改问题：菜单->读表操作->驻留和无功补偿设置-> 驻留日期设置驻留
+对话框中空数据不能入库.
+
+修改记录：ZHULIUTIMESELECT.cpp/
+void CZHULIUTIMESELECT::OnTotalset()
+增加变量 int i=0,setmark=0;//判断是否所有日期均未选择标志
+增加语句    
+for(i=0;i<31;i++)//是否选择了日期
+		if(m_Result[i]!=0)
+		{
+			setmark=1;//选择了驻留日期
+			break;
+		}
+	if(setmark)//驻留日期存在,可以下发驻留
+	{
+		CREADRANGLE          dlg;
+		dlg.m_days   =         0;
+		........
+	}
+	else //驻留日期为空
+	{
+        
+		for(i=0;i<67;i++)//清全局变量
+		   pview->m_DateReadParameter[i]=0;
+	   m_AppearStr = " 统一设置参数如下：\r\n【读表日期】\r\n无日期\r\n 清空按日期设置驻留参数数据库 \r\n"; 
+	   //询问 
+	    CMessage   DLG;
+		DLG.m_title = "定时读表参数设置如下吗？";
+		DLG.m_str   = m_AppearStr;
+
+		if(DLG.DoModal() == IDOK)
+		{
+			CTime timet = CTime::GetCurrentTime();//时间
+			str.Format("【%4d-%02d-%02d %02d:%02d:%02d】按日设置驻留:\r\n%s ",timet.GetYear(),timet.GetMonth(),timet.GetDay(),timet.GetHour(),timet.GetMinute(),timet.GetSecond(),m_AppearStr);
+			pview->WriteToLog(str);
+			//写入驻留表参数
+			pview->WriteToParameterByDate();
+			CDialog::OnOK();
+		}
+修改函数void CZHULIUTIMESELECT::CheckStatus() 
+修改前
+	if(m_ZhuDays <= 0)
+	{
+		pt = GetDlgItem(IDC_FENGSET);
+		pt->EnableWindow(FALSE);
+		pt = GetDlgItem(IDC_TOTALSET);
+		pt->EnableWindow(FALSE);
+	}
+修改后
+    if(m_ZhuDays <= 0)//清空驻留 统一设置按钮可用
+	{
+		pt = GetDlgItem(IDC_FENGSET);
+		pt->EnableWindow(FALSE);
+		pt = GetDlgItem(IDC_TOTALSET);
+		//pt->EnableWindow(FALSE);
+        pt->EnableWindow(TRUE);
+	}
+修改函数CZHULIUTIMESELECT::CZHULIUTIMESELECT(CWnd* pParent /*=NULL*/)
+	: CDialog(CZHULIUTIMESELECT::IDD, pParent)
+修改前	m_check1  = TRUE;
+修改后 m_check1  = FALSE;
+========================================================
+=======================================================
+修改编号：3
+修改版本：1.90F
+修改时间：2010-08-16 14：29
+修改人员：limz
+修改问题：汉字提示错误
+
+修改记录：READRANGLE.cpp /void CREADRANGLE::OnOK() 中的
+    修改前
+     //谷电量
+	if(m_Isgdd)
+	{	
+		m_BitValue = m_BitValue + int(pow(2,1));
+		str        = str  +    "平电量  ";
+	}  
+	修改后：
+	//谷电量
+	if(m_Isgdd)
+	{	
+		m_BitValue = m_BitValue + int(pow(2,1));
+		str        = str  +    "谷电量  ";
+	}  
+========================================================
+=======================================================
+修改编号：
+修改版本：
+修改时间：
+修改人员：
+修改问题：
+
+修改记录：
+
+========================================================
+=======================================================
+修改编号：
+修改版本：
+修改时间：
+修改人员：
+修改问题：
+
+修改记录：
+
+========================================================
+=======================================================
+修改编号：
+修改版本：
+修改时间：
+修改人员：
+修改问题：
+
+修改记录：
+
+========================================================
+=======================================================
+修改编号：
+修改版本：
+修改时间：
+修改人员：
+修改问题：
+
+修改记录：
+
+========================================================
+=======================================================
+修改编号：
+修改版本：
+修改时间：
+修改人员：
+修改问题：
+
+修改记录：
+
+========================================================
+=======================================================
+修改编号：
+修改版本：
+修改时间：
+修改人员：
+修改问题：
+
+修改记录：
+
+========================================================
+=======================================================
+修改编号：
+修改版本：
+修改时间：
+修改人员：
+修改问题：
+
+修改记录：
+
+========================================================
+=======================================================
+修改编号：
+修改版本：
+修改时间：
+修改人员：
+修改问题：
+
+修改记录：
+
+========================================================
+=======================================================
+修改编号：
+修改版本：
+修改时间：
+修改人员：
+修改问题：
+
+修改记录：
+
+========================================================
+=======================================================
+修改编号：
+修改版本：
+修改时间：
+修改人员：
+修改问题：
+
+修改记录：
+
+========================================================
+=======================================================
+修改编号：
+修改版本：
+修改时间：
+修改人员：
+修改问题：
+
+修改记录：
+
+========================================================
+=======================================================
+修改编号：
+修改版本：
+修改时间：
+修改人员：
+修改问题：
+
+修改记录：
+
+========================================================
+=======================================================
+修改编号：
+修改版本：
+修改时间：
+修改人员：
+修改问题：
+
+修改记录：
+
+========================================================
+=======================================================
+修改编号：
+修改版本：
+修改时间：
+修改人员：
+修改问题：
+
+修改记录：
+
+========================================================
+=======================================================
+修改编号：
+修改版本：
+修改时间：
+修改人员：
+修改问题：
+
+修改记录：
+
+========================================================
+=======================================================
+修改编号：
+修改版本：
+修改时间：
+修改人员：
+修改问题：
+
+修改记录：
+
+========================================================

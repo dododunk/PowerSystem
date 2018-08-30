@@ -1,0 +1,42 @@
+// IFRM.odl : type library source for IFRM.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (IFRM.tlb).
+
+[ uuid(2CD482BE-1805-42FF-9155-10AC169D6DBE), version(1.0) ]
+library IFRM
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CIFRMDoc
+	
+	[ uuid(289B6134-D862-4066-9E9C-7A3A163EEE8B) ]
+	dispinterface IIFRM
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CIFRMDoc)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CIFRMDoc)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CIFRMDoc
+	
+	[ uuid(8B14B09D-D2CF-40AF-94D3-9CC1F61B0AFE) ]
+	coclass Document
+	{
+		[default] dispinterface IIFRM;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

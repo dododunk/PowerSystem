@@ -1,0 +1,674 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{F021675B-FD8F-475A-911F-2D66ADB69B11}</ProjectGuid>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\IFRM.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\IFRM.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\IFRM.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\IFRM.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\IFRM.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\IFRM.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\IFRM.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\IFRM.exe</OutputFile>
+      <AdditionalDependencies>TAPI32.LIB;PCI-Dask.LIB;mpr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="_rdocolumn.cpp" />
+    <ClCompile Include="_rdoconnection.cpp" />
+    <ClCompile Include="_rdoengine.cpp" />
+    <ClCompile Include="_rdoenvironment.cpp" />
+    <ClCompile Include="_rdoresultset.cpp" />
+    <ClCompile Include="CHANGEAMMETERDLG.cpp" />
+    <ClCompile Include="IFRM.cpp" />
+    <ClCompile Include="IFRMDoc.cpp" />
+    <ClCompile Include="IFRMView.cpp" />
+    <ClCompile Include="InitDialogBar.cpp" />
+    <ClCompile Include="InPlaceEdit.cpp" />
+    <ClCompile Include="IpFrame.cpp" />
+    <ClCompile Include="Label.cpp" />
+    <ClCompile Include="LineLoss.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="Message.cpp" />
+    <ClCompile Include="mschart.cpp" />
+    <ClCompile Include="mscomm.cpp" />
+    <ClCompile Include="msdgridctrl.cpp" />
+    <ClCompile Include="mswinsockcontrol.cpp" />
+    <ClCompile Include="MutiTreeCtrl.cpp" />
+    <ClCompile Include="MyDialogBar.cpp" />
+    <ClCompile Include="MyDialogDataBar.cpp" />
+    <ClCompile Include="MyListCtrl.cpp" />
+    <ClCompile Include="OWEMONEY.cpp" />
+    <ClCompile Include="Parameter.cpp" />
+    <ClCompile Include="PassWord.cpp" />
+    <ClCompile Include="PhaseTest.cpp" />
+    <ClCompile Include="Phone.cpp" />
+    <ClCompile Include="picture.cpp" />
+    <ClCompile Include="PictureEx.cpp" />
+    <ClCompile Include="PriceSet.cpp" />
+    <ClCompile Include="ProgDlg.cpp" />
+    <ClCompile Include="Protcoldlg.cpp" />
+    <ClCompile Include="rdc.cpp" />
+    <ClCompile Include="rdocolumns.cpp" />
+    <ClCompile Include="rdoconnections.cpp" />
+    <ClCompile Include="rdoenvironments.cpp" />
+    <ClCompile Include="rdoerror.cpp" />
+    <ClCompile Include="rdoerrors.cpp" />
+    <ClCompile Include="rdoparameter.cpp" />
+    <ClCompile Include="rdoparameters.cpp" />
+    <ClCompile Include="rdopreparedstatement.cpp" />
+    <ClCompile Include="rdopreparedstatements.cpp" />
+    <ClCompile Include="rdoqueries.cpp" />
+    <ClCompile Include="rdoresultsets.cpp" />
+    <ClCompile Include="rdotable.cpp" />
+    <ClCompile Include="rdotables.cpp" />
+    <ClCompile Include="ReadNoValueDlg.cpp" />
+    <ClCompile Include="READRANGLE.cpp" />
+    <ClCompile Include="Registry.cpp" />
+    <ClCompile Include="ReplaceData.cpp" />
+    <ClCompile Include="Search.cpp" />
+    <ClCompile Include="SelectTable.cpp" />
+    <ClCompile Include="ShowData.cpp" />
+    <ClCompile Include="ShowInfo.cpp" />
+    <ClCompile Include="SrvrItem.cpp" />
+    <ClCompile Include="sstabctl.cpp" />
+    <ClCompile Include="StationCommun.cpp" />
+    <ClCompile Include="StatusbarAnimate.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="TAPILine.cpp" />
+    <ClCompile Include="TestComm.cpp" />
+    <ClCompile Include="TimeCheck.cpp" />
+    <ClCompile Include="TimeSelect.cpp" />
+    <ClCompile Include="TitleTip.cpp" />
+    <ClCompile Include="Transformer.cpp" />
+    <ClCompile Include="TRansformerdisppear.cpp" />
+    <ClCompile Include="TransformRecordset.cpp" />
+    <ClCompile Include="UseInfoRecordSet.cpp" />
+    <ClCompile Include="UserInfo.cpp" />
+    <ClCompile Include="vcaxis.cpp" />
+    <ClCompile Include="vcaxisgrid.cpp" />
+    <ClCompile Include="vcaxisscale.cpp" />
+    <ClCompile Include="vcaxistitle.cpp" />
+    <ClCompile Include="vcbackdrop.cpp" />
+    <ClCompile Include="vcbrush.cpp" />
+    <ClCompile Include="vccategoryscale.cpp" />
+    <ClCompile Include="vccolor.cpp" />
+    <ClCompile Include="vccoor.cpp" />
+    <ClCompile Include="vcdatagrid.cpp" />
+    <ClCompile Include="vcdatapoint.cpp" />
+    <ClCompile Include="vcdatapointlabel.cpp" />
+    <ClCompile Include="vcdatapoints.cpp" />
+    <ClCompile Include="vcfill.cpp" />
+    <ClCompile Include="vcfont.cpp" />
+    <ClCompile Include="vcfootnote.cpp" />
+    <ClCompile Include="vcframe.cpp" />
+    <ClCompile Include="vcintersection.cpp" />
+    <ClCompile Include="vclabel.cpp" />
+    <ClCompile Include="vclabels.cpp" />
+    <ClCompile Include="vclcoor.cpp" />
+    <ClCompile Include="vclegend.cpp" />
+    <ClCompile Include="vclight.cpp" />
+    <ClCompile Include="vclightsource.cpp" />
+    <ClCompile Include="vclightsources.cpp" />
+    <ClCompile Include="vclocation.cpp" />
+    <ClCompile Include="vcmarker.cpp" />
+    <ClCompile Include="vcpen.cpp" />
+    <ClCompile Include="vcplot.cpp" />
+    <ClCompile Include="vcplotbase.cpp" />
+    <ClCompile Include="vcrect.cpp" />
+    <ClCompile Include="vcseries.cpp" />
+    <ClCompile Include="vcseriescollection.cpp" />
+    <ClCompile Include="vcseriesmarker.cpp" />
+    <ClCompile Include="vcseriesposition.cpp" />
+    <ClCompile Include="vcshadow.cpp" />
+    <ClCompile Include="vcstatline.cpp" />
+    <ClCompile Include="vctextlayout.cpp" />
+    <ClCompile Include="vctick.cpp" />
+    <ClCompile Include="vctitle.cpp" />
+    <ClCompile Include="vcvaluescale.cpp" />
+    <ClCompile Include="vcview3d.cpp" />
+    <ClCompile Include="vcwall.cpp" />
+    <ClCompile Include="vcweighting.cpp" />
+    <ClCompile Include="WuGongDlg.cpp" />
+    <ClCompile Include="WuGongSpace.cpp" />
+    <ClCompile Include="XPButton.cpp" />
+    <ClCompile Include="ZHULIUTIMESELECT.cpp" />
+    <ClCompile Include="Color.cpp" />
+    <ClCompile Include="EnBitmap.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="hlp\IFRM.hpj">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">start /wait hcw /C /E /M "hlp\%(Filename).hpj" 
+if errorlevel 1 goto :Error 
+if not exist "hlp\%(Filename).hlp" goto :Error 
+copy "hlp\%(Filename).hlp" $(OutDir) 
+goto :done 
+:Error 
+echo hlp\%(Filename).hpj(1) : error: 
+type "hlp\%(Filename).log" 
+:done </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Making help file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)\$(InputName).hlp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">hlp\AfxCore.rtf;hlp\AfxPrint.rtf;hlp\$(TargetName).hm;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">start /wait hcw /C /E /M "hlp\%(Filename).hpj" 
+if errorlevel 1 goto :Error 
+if not exist "hlp\%(Filename).hlp" goto :Error 
+copy "hlp\%(Filename).hlp" $(OutDir) 
+goto :done 
+:Error 
+echo hlp\%(Filename).hpj(1) : error: 
+type "hlp\%(Filename).log" 
+:done </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Making help file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)\$(InputName).hlp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">hlp\AfxCore.rtf;hlp\AfxPrint.rtf;hlp\$(TargetName).hm;%(AdditionalInputs)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="res\Devior.smf" />
+    <CustomBuild Include="res\IFRM.rc2" />
+    <CustomBuild Include="hlp\AfxCore.rtf" />
+    <CustomBuild Include="hlp\AfxOleCl.rtf" />
+    <CustomBuild Include="hlp\AfxOleSv.rtf" />
+    <CustomBuild Include="hlp\AfxPrint.rtf" />
+    <CustomBuild Include="hlp\IFRM.cnt">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy "hlp\%(Filename).cnt" $(OutDir)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Copying contents file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)\$(InputName).cnt;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy "hlp\%(Filename).cnt" $(OutDir)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Copying contents file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)\$(InputName).cnt;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="PCI-Dask.dll" />
+    <CustomBuild Include="res\sample.avi" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="IFRM.odl">
+      <TargetEnvironment Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Win32</TargetEnvironment>
+      <TargetEnvironment Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Win32</TargetEnvironment>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IFRM.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="_rdocolumn.h" />
+    <ClInclude Include="_rdoconnection.h" />
+    <ClInclude Include="_rdoengine.h" />
+    <ClInclude Include="_rdoenvironment.h" />
+    <ClInclude Include="_rdoresultset.h" />
+    <ClInclude Include="Ametter.h" />
+    <ClInclude Include="AmetterRecordset.h" />
+    <ClInclude Include="AMMETERRANGER.h" />
+    <ClInclude Include="AngleSet.h" />
+    <ClInclude Include="AutoDateReadModule.h" />
+    <ClInclude Include="AutoFont.h" />
+    <ClInclude Include="BreadSetting.h" />
+    <ClInclude Include="BTNST.H" />
+    <ClInclude Include="CHANGEAMMETER.h" />
+    <ClInclude Include="CHANGEAMMETERDLG.h" />
+    <ClInclude Include="ChildStation.h" />
+    <ClInclude Include="CntrItem.h" />
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="ColorButton.h" />
+    <ClInclude Include="ColorStatic.h" />
+    <ClInclude Include="Condtions.h" />
+    <ClInclude Include="CRC.H" />
+    <ClInclude Include="Credits.h" />
+    <ClInclude Include="Dask.h" />
+    <ClInclude Include="DataBaseSet.h" />
+    <ClInclude Include="DataInfoRecordSet.h" />
+    <ClInclude Include="DataInformation.h" />
+    <ClInclude Include="DataInto.h" />
+    <ClInclude Include="DIBAPI.H" />
+    <ClInclude Include="DIBSectionLite.h" />
+    <ClInclude Include="ELECTDEAL.h" />
+    <ClInclude Include="ELKind.h" />
+    <ClInclude Include="EnBitmap.h" />
+    <ClInclude Include="EveryTimes.h" />
+    <ClInclude Include="Expandingdialog.h" />
+    <ClInclude Include="FENGBEISET.h" />
+    <ClInclude Include="font.h" />
+    <ClInclude Include="FTPGetData.h" />
+    <ClInclude Include="Garrison.h" />
+    <ClInclude Include="GarrisonRecordSet.h" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="GridCell.h" />
+    <ClInclude Include="GridCellBase.h" />
+    <ClInclude Include="GridCtrl.h" />
+    <ClInclude Include="GridDropTarget.h" />
+    <ClInclude Include="HoverEdit.h" />
+    <ClInclude Include="HyperLink.h" />
+    <ClInclude Include="IFRM.h" />
+    <ClInclude Include="IFRMDoc.h" />
+    <ClInclude Include="IFRMView.h" />
+    <ClInclude Include="InitDialogBar.h" />
+    <ClInclude Include="InPlaceEdit.h" />
+    <ClInclude Include="IpFrame.h" />
+    <ClInclude Include="Label.h" />
+    <ClInclude Include="LineLoss.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MakeArray.h" />
+    <ClInclude Include="Message.h" />
+    <ClInclude Include="mschart.h" />
+    <ClInclude Include="mscomm.h" />
+    <ClInclude Include="msdgridctrl.h" />
+    <ClInclude Include="mswinsockcontrol.h" />
+    <ClInclude Include="MutiTreeCtrl.h" />
+    <ClInclude Include="MyDialogBar.h" />
+    <ClInclude Include="MyDialogDataBar.h" />
+    <ClInclude Include="MyListCtrl.h" />
+    <ClInclude Include="OWEMONEY.h" />
+    <ClInclude Include="Parameter.h" />
+    <ClInclude Include="PassWord.h" />
+    <ClInclude Include="PhaseTest.h" />
+    <ClInclude Include="Phone.h" />
+    <ClInclude Include="picture.h" />
+    <ClInclude Include="PictureEx.h" />
+    <ClInclude Include="PriceSet.h" />
+    <ClInclude Include="ProgDlg.h" />
+    <ClInclude Include="Protcoldlg.h" />
+    <ClInclude Include="Ranger.h" />
+    <ClInclude Include="rdc.h" />
+    <ClInclude Include="rdocolumns.h" />
+    <ClInclude Include="rdoconnections.h" />
+    <ClInclude Include="rdoenvironments.h" />
+    <ClInclude Include="rdoerror.h" />
+    <ClInclude Include="rdoerrors.h" />
+    <ClInclude Include="rdoparameter.h" />
+    <ClInclude Include="rdoparameters.h" />
+    <ClInclude Include="rdopreparedstatement.h" />
+    <ClInclude Include="rdopreparedstatements.h" />
+    <ClInclude Include="rdoqueries.h" />
+    <ClInclude Include="rdoresultsets.h" />
+    <ClInclude Include="rdotable.h" />
+    <ClInclude Include="rdotables.h" />
+    <ClInclude Include="ReadNoValueDlg.h" />
+    <ClInclude Include="READRANGLE.h" />
+    <ClInclude Include="Registry.h" />
+    <ClInclude Include="ReplaceData.h" />
+    <CustomBuild Include="Resource.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">echo. &gt;"hlp\$(TargetName).hm" 
+echo // Commands (ID_* and IDM_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm ID_,HID_,0x10000 IDM_,HIDM_,0x10000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Prompts (IDP_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDP_,HIDP_,0x30000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Resources (IDR_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDR_,HIDR_,0x20000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Dialogs (IDD_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDD_,HIDD_,0x20000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Frame Controls (IDW_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDW_,HIDW_,0x50000 resource.h &gt;&gt;"hlp\$(TargetName).hm" </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Making help include file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">hlp\$(TargetName).hm;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">echo. &gt;"hlp\$(TargetName).hm" 
+echo // Commands (ID_* and IDM_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm ID_,HID_,0x10000 IDM_,HIDM_,0x10000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Prompts (IDP_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDP_,HIDP_,0x30000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Resources (IDR_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDR_,HIDR_,0x20000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Dialogs (IDD_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDD_,HIDD_,0x20000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Frame Controls (IDW_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDW_,HIDW_,0x50000 resource.h &gt;&gt;"hlp\$(TargetName).hm" </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Making help include file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">hlp\$(TargetName).hm;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="Search.h" />
+    <ClInclude Include="SelectTable.h" />
+    <ClInclude Include="ShowData.h" />
+    <ClInclude Include="ShowInfo.h" />
+    <ClInclude Include="SrvrItem.h" />
+    <ClInclude Include="sstabctl.h" />
+    <ClInclude Include="StationCommun.h" />
+    <ClInclude Include="StatusbarAnimate.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TAPILine.h" />
+    <ClInclude Include="TestComm.h" />
+    <ClInclude Include="TimeCheck.h" />
+    <ClInclude Include="TimeSelect.h" />
+    <ClInclude Include="TitleTip.h" />
+    <ClInclude Include="TrackControl.h" />
+    <ClInclude Include="Transformer.h" />
+    <ClInclude Include="TRansformerdisppear.h" />
+    <ClInclude Include="TransformRecordset.h" />
+    <ClInclude Include="UseInfoRecordSet.h" />
+    <ClInclude Include="UserInfo.h" />
+    <ClInclude Include="vcaxis.h" />
+    <ClInclude Include="vcaxisgrid.h" />
+    <ClInclude Include="vcaxisscale.h" />
+    <ClInclude Include="vcaxistitle.h" />
+    <ClInclude Include="vcbackdrop.h" />
+    <ClInclude Include="vcbrush.h" />
+    <ClInclude Include="vccategoryscale.h" />
+    <ClInclude Include="vccolor.h" />
+    <ClInclude Include="vccoor.h" />
+    <ClInclude Include="vcdatagrid.h" />
+    <ClInclude Include="vcdatapoint.h" />
+    <ClInclude Include="vcdatapointlabel.h" />
+    <ClInclude Include="vcdatapoints.h" />
+    <ClInclude Include="vcfill.h" />
+    <ClInclude Include="vcfont.h" />
+    <ClInclude Include="vcfootnote.h" />
+    <ClInclude Include="vcframe.h" />
+    <ClInclude Include="vcintersection.h" />
+    <ClInclude Include="vclabel.h" />
+    <ClInclude Include="vclabels.h" />
+    <ClInclude Include="vclcoor.h" />
+    <ClInclude Include="vclegend.h" />
+    <ClInclude Include="vclight.h" />
+    <ClInclude Include="vclightsource.h" />
+    <ClInclude Include="vclightsources.h" />
+    <ClInclude Include="vclocation.h" />
+    <ClInclude Include="vcmarker.h" />
+    <ClInclude Include="vcpen.h" />
+    <ClInclude Include="vcplot.h" />
+    <ClInclude Include="vcplotbase.h" />
+    <ClInclude Include="vcrect.h" />
+    <ClInclude Include="vcseries.h" />
+    <ClInclude Include="vcseriescollection.h" />
+    <ClInclude Include="vcseriesmarker.h" />
+    <ClInclude Include="vcseriesposition.h" />
+    <ClInclude Include="vcshadow.h" />
+    <ClInclude Include="vcstatline.h" />
+    <ClInclude Include="vctextlayout.h" />
+    <ClInclude Include="vctick.h" />
+    <ClInclude Include="vctitle.h" />
+    <ClInclude Include="vcvaluescale.h" />
+    <ClInclude Include="vcview3d.h" />
+    <ClInclude Include="vcwall.h" />
+    <ClInclude Include="vcweighting.h" />
+    <ClInclude Include="WuGongDlg.h" />
+    <ClInclude Include="WuGongSpace.h" />
+    <ClInclude Include="XPButton.h" />
+    <ClInclude Include="ZHULIUTIMESELECT.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\012.gif" />
+    <Image Include="res\114.BMP" />
+    <Image Include="res\116.BMP" />
+    <Image Include="res\amkind.bmp" />
+    <Image Include="res\AMMETER.bmp" />
+    <Image Include="res\AMMETERTITLE.bmp" />
+    <Image Include="res\ammetter.ico" />
+    <Image Include="res\amters.bmp" />
+    <Image Include="res\angle.ico" />
+    <Image Include="res\AR_MYDOC.ICO" />
+    <Image Include="res\BACK.BMP" />
+    <Image Include="res\back2.bmp" />
+    <Image Include="res\back3.bmp" />
+    <Image Include="res\backgrou.bmp" />
+    <Image Include="res\background.bmp" />
+    <Image Include="res\backgrounds.bmp" />
+    <Image Include="res\backs.bmp" />
+    <Image Include="res\bird.ico" />
+    <Image Include="res\bitmap_s.bmp" />
+    <Image Include="res\BKbmp.bmp" />
+    <Image Include="res\bmp00001.bmp" />
+    <Image Include="res\bmp00002.bmp" />
+    <Image Include="res\bmp00003.bmp" />
+    <Image Include="res\bmp00004.bmp" />
+    <Image Include="res\bmp00005.bmp" />
+    <Image Include="res\bmp00006.bmp" />
+    <Image Include="res\bmp00007.bmp" />
+    <Image Include="res\bmp00008.bmp" />
+    <Image Include="res\bmp00009.bmp" />
+    <Image Include="res\bmp00010.bmp" />
+    <Image Include="res\ButtonsWin3000.bmp" />
+    <Image Include="res\company.bmp" />
+    <Image Include="res\COMPANY.ico" />
+    <Image Include="res\compensa.ico" />
+    <Image Include="res\computer.bmp" />
+    <Image Include="res\conf.ico" />
+    <Image Include="res\connect.bmp" />
+    <Image Include="res\connect.ico" />
+    <Image Include="res\cursor.ico" />
+    <Image Include="res\devices.ico" />
+    <Image Include="res\dingchec.ico" />
+    <Image Include="res\DINGSHI.ico" />
+    <Image Include="res\dingshinnull.ico" />
+    <Image Include="res\disconnect.bmp" />
+    <Image Include="res\doWnButton.bmp" />
+    <Image Include="res\ELECT.ico" />
+    <Image Include="res\eyes.gif" />
+    <Image Include="res\ftp.ico" />
+    <Image Include="res\Girdback.bmp" />
+    <Image Include="res\HLINE.bmp" />
+    <Image Include="res\hyperlink.ico" />
+    <Image Include="res\ico00001.ico" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\idr_main.ico" />
+    <Image Include="res\IFRM.ico" />
+    <Image Include="res\IFRMDoc.ico" />
+    <Image Include="res\img.bmp" />
+    <Image Include="res\IToolbar.bmp" />
+    <Image Include="res\Key.ico" />
+    <Image Include="res\light.ico" />
+    <Image Include="res\LINE.bmp" />
+    <Image Include="res\line.ico" />
+    <Image Include="res\line3.ico" />
+    <Image Include="res\linemode.ico" />
+    <Image Include="res\linemodu.ico" />
+    <Image Include="res\link.ICO" />
+    <Image Include="res\LIST.bmp" />
+    <Image Include="res\list.ico" />
+    <Image Include="res\Listdata.ico" />
+    <Image Include="res\lsalemod.ico" />
+    <Image Include="res\mainfram.bmp" />
+    <Image Include="res\mainframe.bmp" />
+    <Image Include="res\MISC.ICO" />
+    <Image Include="res\MODEM.ico" />
+    <Image Include="res\modules.ico" />
+    <Image Include="res\MSDTX.ICO" />
+    <Image Include="res\Nanotech Warning.ico" />
+    <Image Include="res\Network.ico" />
+    <Image Include="res\NEWSAT.ICO" />
+    <Image Include="res\paramete.ico" />
+    <Image Include="res\parameter.ico" />
+    <Image Include="res\pass.ico" />
+    <Image Include="res\PLUG.ICO" />
+    <Image Include="res\power.ico" />
+    <Image Include="res\PRICETITLE.bmp" />
+    <Image Include="res\radar.gif" />
+    <Image Include="res\run.ico" />
+    <Image Include="res\salemodu.ico" />
+    <Image Include="Debug\SCDCNCLL.ICO" />
+    <Image Include="res\Set.ico" />
+    <Image Include="res\Setup.ico" />
+    <Image Include="res\splite.bmp" />
+    <Image Include="res\sql.ico" />
+    <Image Include="res\sub.ico" />
+    <Image Include="res\sub1.ico" />
+    <Image Include="res\submodul.ico" />
+    <Image Include="res\subtotal.ico" />
+    <Image Include="res\TABLEWIZ.ICO" />
+    <Image Include="res\task.bmp" />
+    <Image Include="res\tb24.bmp" />
+    <Image Include="res\TIMER.ico" />
+    <Image Include="res\title.ico" />
+    <Image Include="res\tolmodul.ico" />
+    <Image Include="res\tolmodule.ico" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\Toolbox.ico" />
+    <Image Include="res\TOOLS.ICO" />
+    <Image Include="res\total.ICO" />
+    <Image Include="res\trans2.ico" />
+    <Image Include="res\trans3.ico" />
+    <Image Include="res\transfor.ico" />
+    <Image Include="res\TRANSFORMER.bmp" />
+    <Image Include="res\TRANSFORMERTITLE.bmp" />
+    <Image Include="res\type.gif" />
+    <Image Include="res\usertitle.bmp" />
+    <Image Include="res\usetitle.bmp" />
+    <Image Include="res\VIEW.ICO" />
+    <Image Include="res\zhuliutitle.bmp" />
+    <Image Include="res\ZSTITLE.bmp" />
+    <Image Include="hlp\AppExit.bmp" />
+    <Image Include="hlp\Bullet.bmp" />
+    <Image Include="hlp\CurArw2.bmp" />
+    <Image Include="hlp\CurArw4.bmp" />
+    <Image Include="hlp\CurHelp.bmp" />
+    <Image Include="hlp\EditCopy.bmp" />
+    <Image Include="hlp\EditCut.bmp" />
+    <Image Include="hlp\EditPast.bmp" />
+    <Image Include="hlp\EditUndo.bmp" />
+    <Image Include="hlp\FileNew.bmp" />
+    <Image Include="hlp\FileOpen.bmp" />
+    <Image Include="hlp\FilePrnt.bmp" />
+    <Image Include="hlp\FileSave.bmp" />
+    <Image Include="hlp\HlpSBar.bmp" />
+    <Image Include="hlp\HlpTBar.bmp" />
+    <Image Include="hlp\RecFirst.bmp" />
+    <Image Include="hlp\RecLast.bmp" />
+    <Image Include="hlp\RecNext.bmp" />
+    <Image Include="hlp\RecPrev.bmp" />
+    <Image Include="hlp\Scmax.bmp" />
+    <Image Include="hlp\ScMenu.bmp" />
+    <Image Include="hlp\Scmin.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="PCI-Dask.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

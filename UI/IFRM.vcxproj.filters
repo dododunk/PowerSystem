@@ -1,0 +1,1349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{e47e91f9-5149-441d-9492-b117b2d79429}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{50b9b43b-52b5-415e-8d2a-e81ca93994a9}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{c61f85e5-9532-441e-9a63-468fbb7472c6}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Help Files">
+      <UniqueIdentifier>{47926673-a92a-4a2a-adcc-ed92281ab2d5}</UniqueIdentifier>
+      <Extensions>cnt;rtf</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="_rdocolumn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="_rdoconnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="_rdoengine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="_rdoenvironment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="_rdoresultset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CHANGEAMMETERDLG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IFRM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IFRMDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IFRMView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InitDialogBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InPlaceEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Label.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LineLoss.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Message.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mschart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mscomm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msdgridctrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mswinsockcontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MutiTreeCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyDialogBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyDialogDataBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyListCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OWEMONEY.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Parameter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PassWord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PhaseTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Phone.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="picture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PictureEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PriceSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Protcoldlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rdc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rdocolumns.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoconnections.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoenvironments.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoerror.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoerrors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoparameter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoparameters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rdopreparedstatement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rdopreparedstatements.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoqueries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoresultsets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rdotable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rdotables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadNoValueDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="READRANGLE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Registry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReplaceData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Search.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SrvrItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sstabctl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StationCommun.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusbarAnimate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TAPILine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestComm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeCheck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeSelect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleTip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Transformer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TRansformerdisppear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformRecordset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UseInfoRecordSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcaxis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcaxisgrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcaxisscale.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcaxistitle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcbackdrop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcbrush.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vccategoryscale.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vccolor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vccoor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcdatagrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcdatapoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcdatapointlabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcdatapoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcfill.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcfont.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcfootnote.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcframe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcintersection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vclabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vclabels.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vclcoor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vclegend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vclight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vclightsource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vclightsources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vclocation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcmarker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcpen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcplot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcplotbase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcrect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcseries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcseriescollection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcseriesmarker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcseriesposition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcshadow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcstatline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vctextlayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vctick.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vctitle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcvaluescale.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcview3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcwall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcweighting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WuGongDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WuGongSpace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XPButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHULIUTIMESELECT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EnBitmap.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="IFRM.odl">
+      <Filter>Source Files</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IFRM.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="_rdocolumn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="_rdoconnection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="_rdoengine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="_rdoenvironment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="_rdoresultset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ametter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AmetterRecordset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AMMETERRANGER.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AngleSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoDateReadModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoFont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BreadSetting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BTNST.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CHANGEAMMETER.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CHANGEAMMETERDLG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildStation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CntrItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorStatic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Condtions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CRC.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Credits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBaseSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataInfoRecordSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataInformation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataInto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DIBAPI.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DIBSectionLite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ELECTDEAL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ELKind.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnBitmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EveryTimes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Expandingdialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FENGBEISET.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FTPGetData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Garrison.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GarrisonRecordSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCellBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GridDropTarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HoverEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HyperLink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IFRM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IFRMDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IFRMView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InitDialogBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InPlaceEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Label.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LineLoss.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MakeArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mschart.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mscomm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msdgridctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mswinsockcontrol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MutiTreeCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyDialogBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyDialogDataBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyListCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OWEMONEY.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Parameter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PassWord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PhaseTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Phone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="picture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PictureEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PriceSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Protcoldlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ranger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rdc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rdocolumns.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rdoconnections.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rdoenvironments.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rdoerror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rdoerrors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rdoparameter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rdoparameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rdopreparedstatement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rdopreparedstatements.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rdoqueries.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rdoresultsets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rdotable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rdotables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadNoValueDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="READRANGLE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Registry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReplaceData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Search.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SrvrItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sstabctl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StationCommun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusbarAnimate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TAPILine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestComm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeSelect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleTip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Transformer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TRansformerdisppear.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformRecordset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UseInfoRecordSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcaxis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcaxisgrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcaxisscale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcaxistitle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcbackdrop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcbrush.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vccategoryscale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vccolor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vccoor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcdatagrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcdatapoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcdatapointlabel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcdatapoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcfill.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcfont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcfootnote.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcintersection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vclabel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vclabels.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vclcoor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vclegend.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vclight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vclightsource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vclightsources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vclocation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcmarker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcplot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcplotbase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcrect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcseries.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcseriescollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcseriesmarker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcseriesposition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcshadow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcstatline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vctextlayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vctick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vctitle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcvaluescale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcview3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcwall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vcweighting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WuGongDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WuGongSpace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XPButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHULIUTIMESELECT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\012.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\114.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\116.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\amkind.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\AMMETER.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\AMMETERTITLE.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ammetter.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\amters.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\angle.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\AR_MYDOC.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BACK.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\back2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\back3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\backgrou.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\background.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\backgrounds.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\backs.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bird.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmap_s.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BKbmp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00002.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00003.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00004.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00005.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00006.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00007.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00008.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00009.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00010.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ButtonsWin3000.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\company.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\COMPANY.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\compensa.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\computer.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\conf.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\connect.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\connect.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\cursor.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\devices.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\dingchec.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\DINGSHI.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\dingshinnull.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\disconnect.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\doWnButton.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ELECT.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\eyes.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ftp.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Girdback.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\HLINE.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\hyperlink.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ico00001.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\idr_main.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\IFRM.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\IFRMDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\img.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\IToolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Key.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\light.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\LINE.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\line.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\line3.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\linemode.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\linemodu.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\link.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\LIST.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\list.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Listdata.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\lsalemod.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainfram.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainframe.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\MISC.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\MODEM.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\modules.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\MSDTX.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Nanotech Warning.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Network.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\NEWSAT.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\paramete.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\parameter.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\pass.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\PLUG.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\power.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\PRICETITLE.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\radar.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\run.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\salemodu.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Debug\SCDCNCLL.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Set.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Setup.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\splite.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\sql.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\sub.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\sub1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\submodul.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\subtotal.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\TABLEWIZ.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\task.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\tb24.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\TIMER.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\title.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\tolmodul.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\tolmodule.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbox.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\TOOLS.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\total.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\trans2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\trans3.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\transfor.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\TRANSFORMER.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\TRANSFORMERTITLE.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\type.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\usertitle.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\usetitle.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\VIEW.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\zhuliutitle.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ZSTITLE.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="hlp\AppExit.bmp">
+      <Filter>Help Files</Filter>
+    </Image>
+    <Image Include="hlp\Bullet.bmp">
+      <Filter>Help Files</Filter>
+    </Image>
+    <Image Include="hlp\CurArw2.bmp">
+      <Filter>Help Files</Filter>
+    </Image>
+    <Image Include="hlp\CurArw4.bmp">
+      <Filter>Help Files</Filter>
+    </Image>
+    <Image Include="hlp\CurHelp.bmp">
+      <Filter>Help Files</Filter>
+    </Image>
+    <Image Include="hlp\EditCopy.bmp">
+      <Filter>Help Files</Filter>
+    </Image>
+    <Image Include="hlp\EditCut.bmp">
+      <Filter>Help Files</Filter>
+    </Image>
+    <Image Include="hlp\EditPast.bmp">
+      <Filter>Help Files</Filter>
+    </Image>
+    <Image Include="hlp\EditUndo.bmp">
+      <Filter>Help Files</Filter>
+    </Image>
+    <Image Include="hlp\FileNew.bmp">
+      <Filter>Help Files</Filter>
+    </Image>
+    <Image Include="hlp\FileOpen.bmp">
+      <Filter>Help Files</Filter>
+    </Image>
+    <Image Include="hlp\FilePrnt.bmp">
+      <Filter>Help Files</Filter>
+    </Image>
+    <Image Include="hlp\FileSave.bmp">
+      <Filter>Help Files</Filter>
+    </Image>
+    <Image Include="hlp\HlpSBar.bmp">
+      <Filter>Help Files</Filter>
+    </Image>
+    <Image Include="hlp\HlpTBar.bmp">
+      <Filter>Help Files</Filter>
+    </Image>
+    <Image Include="hlp\RecFirst.bmp">
+      <Filter>Help Files</Filter>
+    </Image>
+    <Image Include="hlp\RecLast.bmp">
+      <Filter>Help Files</Filter>
+    </Image>
+    <Image Include="hlp\RecNext.bmp">
+      <Filter>Help Files</Filter>
+    </Image>
+    <Image Include="hlp\RecPrev.bmp">
+      <Filter>Help Files</Filter>
+    </Image>
+    <Image Include="hlp\Scmax.bmp">
+      <Filter>Help Files</Filter>
+    </Image>
+    <Image Include="hlp\ScMenu.bmp">
+      <Filter>Help Files</Filter>
+    </Image>
+    <Image Include="hlp\Scmin.bmp">
+      <Filter>Help Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="PCI-Dask.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="hlp\IFRM.hpj">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Devior.smf">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\IFRM.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\AfxCore.rtf">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\AfxOleCl.rtf">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\AfxOleSv.rtf">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\AfxPrint.rtf">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\IFRM.cnt">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PCI-Dask.dll" />
+    <CustomBuild Include="res\sample.avi" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+:Base IFRM.hlp
+1 菜单
+2 文件菜单=menu_file
+2 编辑菜单=menu_edit
+2 查看菜单=menu_view
+2 窗口菜单=menu_window
+2 帮助菜单=menu_help
+1 <<add your application-specific topics here>>
+2 <<add your topic jumps here>>=main_index

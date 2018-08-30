@@ -1,0 +1,8 @@
+customer
+(
+
+   address
+   type //重点、普通用户/大用户
+   checkpoit
+   checkInterval,
+)

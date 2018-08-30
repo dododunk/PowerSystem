@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EEBD807C-1CCA-4927-9C33-E9CA45541F28}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PowerBenchSharpLib</RootNamespace>
+    <AssemblyName>PowerBenchSharpLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>.\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Amm\AmmeterInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Amm\AmmeterInfoControl.Designer.cs">
+      <DependentUpon>AmmeterInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\AmmeterDB.cs" />
+    <Compile Include="Amm\AmmeterTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataBase\AmmeterUsage.cs" />
+    <Compile Include="Amm\AutoToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataBase\DbDataConvert.cs" />
+    <Compile Include="Amm\FormAmmAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Amm\FormAmmDel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Amm\FormAmmMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Amm\DisplayProperty.cs" />
+    <Compile Include="Amm\FormAmmOpeBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Amm\FormAmmOpeBase.Designer.cs">
+      <DependentUpon>FormAmmOpeBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FunctionUI\FormCurrentCommTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FunctionUI\FormCurrentCommTest.Designer.cs">
+      <DependentUpon>FormCurrentCommTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionUI\FormOuterSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FunctionUI\FormOuterSetting.Designer.cs">
+      <DependentUpon>FormOuterSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionUI\FormOutPowerTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FunctionUI\FormOutPowerTest.Designer.cs">
+      <DependentUpon>FormOutPowerTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionUI\FormReCallData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FunctionUI\FormReCallData.Designer.cs">
+      <DependentUpon>FormReCallData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelpUI\ComboField.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HelpUI\ComboField.Designer.cs">
+      <DependentUpon>ComboField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelpUI\ControlHelper.cs" />
+    <Compile Include="HelpUI\EditField.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HelpUI\EditField.Designer.cs">
+      <DependentUpon>EditField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logger.cs" />
+    <Compile Include="TreeNodeModify\LevelClass.cs" />
+    <Compile Include="TreeNodeModify\FormNodeModifyDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreeNodeModify\FormNodeModifyDelete.Designer.cs">
+      <DependentUpon>FormNodeModifyDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionUI\UCAmmetersOpe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FunctionUI\UCAmmetersOpe.Designer.cs">
+      <DependentUpon>UCAmmetersOpe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Amm\UCAmmeterUsage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Amm\UCAmmeterUsage.Designer.cs">
+      <DependentUpon>UCAmmeterUsage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionUI\FormReadAmmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FunctionUI\FormReadAmmSetting.Designer.cs">
+      <DependentUpon>FormReadAmmSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCControlHold.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCControlHold.Designer.cs">
+      <DependentUpon>UCControlHold.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\common\Tigera.LibCommon\Tigera.LibCommon.csproj">
+      <Project>{d188a9ef-1f3d-4b3b-bbf2-42357d7c7161}</Project>
+      <Name>Tigera.LibCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tradesystem\basic\Tigera.T_Definition\Tigera.T_Definition.csproj">
+      <Project>{D3B4B819-3492-4B5E-B1E5-9A7F96300EA4}</Project>
+      <Name>Tigera.T_Definition</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Amm\AmmeterInfoControl.resx">
+      <DependentUpon>AmmeterInfoControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Amm\FormAmmOpeBase.resx">
+      <DependentUpon>FormAmmOpeBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunctionUI\FormCurrentCommTest.resx">
+      <DependentUpon>FormCurrentCommTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunctionUI\FormOuterSetting.resx">
+      <DependentUpon>FormOuterSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunctionUI\FormOutPowerTest.resx">
+      <DependentUpon>FormOutPowerTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunctionUI\FormReCallData.resx">
+      <DependentUpon>FormReCallData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpUI\ComboField.resx">
+      <DependentUpon>ComboField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpUI\EditField.resx">
+      <DependentUpon>EditField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeNodeModify\FormNodeModifyDelete.resx">
+      <DependentUpon>FormNodeModifyDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunctionUI\UCAmmetersOpe.resx">
+      <DependentUpon>UCAmmetersOpe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Amm\UCAmmeterUsage.resx">
+      <DependentUpon>UCAmmeterUsage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunctionUI\FormReadAmmSetting.resx">
+      <DependentUpon>FormReadAmmSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCControlHold.resx">
+      <DependentUpon>UCControlHold.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\ammetter.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\company.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\line.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\station.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\user.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\bus.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\transformer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\module.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
